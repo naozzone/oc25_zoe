@@ -8,4 +8,7 @@ Dans ce projet nous programmons le robot Kitronik MOVE
 dans ce mini projet le robot 
 
 - commence le parcours a une position A
-- 
+-  suivre une ligne
+-  Détecter un objet
+-  Tourner de 180 degré
+-  Attraper objet avec pince 
