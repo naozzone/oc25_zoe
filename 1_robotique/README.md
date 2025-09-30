@@ -10,7 +10,7 @@ Dans ce projet nous programmons le robot kitronik move
 
 ## Partie obligatoire
 
-Dans ce mini projet le robot
+Dans ce mini projet le robot:
 
 - Commence le parcours à une position A
 - Va suivre une ligne
@@ -21,7 +21,7 @@ Dans ce mini projet le robot
 
 ## Partie libre
 
-Une partie complétement libre où le robot pourra faire
+Une partie complétement libre où le robot pourra faire:
 
 - Une danse
 - Un dessin
@@ -34,7 +34,8 @@ Une partie complétement libre où le robot pourra faire
 ## Documentation
 
 Toute la documentation se trouvve dans ce ficher README.md
-Vous devez utiliser
+
+Vous devez utiliser:
 
 - 3 niveaux de titres
 - liste avec puces et numéroté
