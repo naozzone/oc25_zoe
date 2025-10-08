@@ -60,11 +60,9 @@ Dans ce mini projet le robot:
   >  >
   
 - Va attraper l'objet avec la pince :
-              ># Fermer la pince
+  >robot.goToPosition(1, 20)
   >
-            >robot.goToPosition(1, 20)
-  >
-            >sleep(1000)
+  >sleep(1000)
   >
   
 - Va amener l'objet à la position A
@@ -74,11 +72,16 @@ Dans ce mini projet le robot:
 Une partie complétement libre où le robot pourra faire:
 
 - Une danse :
-  def danser():
-    robot.move(120, 0, 1000) # tourne
-    robot.goToPosition(1, 160) # ouvre pince 
-    robot.goToPosition(1, 20) # ferme pince
-    robot.move(0, 120, 1000) # tourne autre sens
+  >def danser():
+  >
+    >>robot.move(120, 0, 1000) # tourne
+  >  >
+    >>robot.goToPosition(1, 160) # ouvre pince
+  >  >
+    >>robot.goToPosition(1, 20) # ferme pince
+  >  >
+    >>robot.move(0, 120, 1000) # tourne autre sens
+  >  >
   
 - Un dessin
 - Un light-show
