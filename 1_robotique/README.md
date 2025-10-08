@@ -25,7 +25,7 @@ Dans ce mini projet le robot:
                 suivre_ligne()  
     >
   
-- Va suivre une ligne :
+- Va suivre une ligne (définition d'une fonction) :
   >def suivre_ligne():
   >
     >>left = pin1.read_analog()
@@ -53,7 +53,7 @@ Dans ce mini projet le robot:
     >>return round(d)
   >  >
   
-- Va tourner de 180 degrée :
+- Va tourner de 180 degrée (définition d'une fonction) :
   >def tourner():
   >
     >>robot.move(70, -70, 1000)
@@ -75,7 +75,7 @@ Dans ce mini projet le robot:
 
 Une partie complétement libre où le robot pourra faire:
 
-- Une danse :
+- Une danse (définition d'une fonction) :
   >def danser():
   >
     >>robot.move(120, 0, 1000) # tourne
