@@ -24,8 +24,8 @@ Dans ce mini projet le robot:
 - Va suivre une ligne :
   >def suivre_ligne():
   >
-    >left = pin1.read_analog()
-  >
+    >>left = pin1.read_analog()
+  >  >
     >right = pin2.read_analog()
   >
     >d = (left - right)
