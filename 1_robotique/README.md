@@ -92,7 +92,40 @@ Une partie complétement libre où le robot pourra faire:
 - Parler
 - Faire de la musique
 
-    ...
+## Programme final
+    if prog == 1: 
+        if button_b.is_pressed():
+        # 1. Ouvrir la pince et démarrer le chronomètre
+            robot.goToPosition(1, 160)
+            sleep(300)
+            t0 = time.ticks_ms()
+
+        # 2. Suivre la ligne jusqu'à détecter un objet
+            while distance() > 15:
+                suivre_ligne()
+            
+        # 3. Arrêt + mesure du temps aller
+            robot.move(0, 0)
+            t1 = time.ticks_ms()
+            dt = t1 - t0
+
+        # 4. Demi-tour et fermeture de la pince
+            tourner()
+            robot.goToPosition(1, 20)
+            sleep(500)
+
+        # 5. Suivre la ligne pendant exactement le même temps qu'à l'aller
+            t2 = time.ticks_ms()
+            while time.ticks_diff(time.ticks_ms(), t2) < dt:
+                suivre_ligne()
+
+        # 6. Arrêter, déposer l'objet, danser
+            robot.move(0, 0)
+            robot.goToPosition(1, 160)
+            sleep(500)
+            danser()
+            display.show(Image.HAPPY)
+            sleep(500)
 
 ## Documentation
 
