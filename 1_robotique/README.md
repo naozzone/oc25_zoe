@@ -36,23 +36,36 @@ Dans ce mini projet le robot:
   >  >
   
 - Va déteter un objet avec le capteur ultrason (position 0 variable):
-  def distance():
-    trigger.write_digital(1)
-    time.sleep_us(10)
-    trigger.write_digital(0)
-    d = time_pulse_us(echo, 1)/2e6*340*100 # *100 pour avoir en cm
-    return round(d)
+  >def distance():
+  >
+    >>trigger.write_digital(1)
+  >  >
+    >>time.sleep_us(10)
+  >  >
+    >>trigger.write_digital(0)
+  >  >
+    >>d = time_pulse_us(echo, 1)/2e6*340*100 # *100 pour avoir en cm
+  >  >
+    >>return round(d)
+  >  >
   
 - Va tourner de 180 degrée :
-  def tourner():
-    robot.move(70, -70, 1000)
-    robot.move(0, 0)
-    sleep(500)
+  >def tourner():
+  >
+    >>robot.move(70, -70, 1000)
+  >  >
+    >>robot.move(0, 0)
+  >  >
+    >>sleep(500)
+  >  >
   
 - Va attraper l'objet avec la pince :
-              # Fermer la pince
-            robot.goToPosition(1, 20)
-            sleep(1000)
+              ># Fermer la pince
+  >
+            >robot.goToPosition(1, 20)
+  >
+            >sleep(1000)
+  >
   
 - Va amener l'objet à la position A
 
