@@ -8,10 +8,9 @@ Dans ce projet nous programmons le robot kitronik move
 
 ![Kitronikmove](images/robot.jpg)
 
-## Partie obligatoire
-# support, donc le plan figurant la ligne que le robot va suivre:
 ![Kitronikmove](images/plan.jpg)
 
+## Partie obligatoire
 Dans ce mini projet le robot:
 
 - Commence le parcours à une position A
