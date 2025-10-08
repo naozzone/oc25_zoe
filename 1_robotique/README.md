@@ -15,8 +15,11 @@ Dans ce mini projet le robot:
 - Commence le parcours à une position A
 - Temps entre la position A (début) et l'objet (même durée utilisé pour revenir à la position A) :
     >t1 = time.ticks_ms()
+    >
     >dt = t1 - t0 # durée jusqu'à l'objet
+    >
     >t2 = time.ticks_ms() + dt   # instant dans le futur ou il doit s'arreter
+    >
   
 - Va suivre une ligne :
   def suivre_ligne():
