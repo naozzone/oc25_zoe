@@ -22,12 +22,18 @@ Dans ce mini projet le robot:
     >
   
 - Va suivre une ligne :
-  def suivre_ligne():
-    left = pin1.read_analog()
-    right = pin2.read_analog()
-    d = (left - right)
-    d = d // 10
-    robot.move(5 - d, 5 + d)
+  >def suivre_ligne():
+  >
+    >left = pin1.read_analog()
+  >
+    >right = pin2.read_analog()
+  >
+    >d = (left - right)
+  >
+    >d = d // 10
+  >
+    >robot.move(5 - d, 5 + d)
+  >
   
 - Va déteter un objet avec le capteur ultrason (position 0 variable):
   def distance():
