@@ -19,7 +19,10 @@ Dans ce mini projet le robot:
     >
     >dt = t1 - t0 # durée jusqu'à l'objet
     >
-    >t2 = time.ticks_ms() + dt   # instant dans le futur ou il doit s'arreter
+    >t2 = time.ticks_ms()
+    >
+    >while time.ticks_diff(time.ticks_ms(), t2) < dt: # instant dans le futur ou il doit s'arreter
+                suivre_ligne()  
     >
   
 - Va suivre une ligne :
