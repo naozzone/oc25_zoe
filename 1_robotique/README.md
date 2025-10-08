@@ -32,11 +32,11 @@ Dans ce mini projet le robot:
   >  >
     >>right = pin2.read_analog()
   >  >
-    >>d = (left - right)
+    >>b = (left - right)
   >  >
-    >>d = d // 10
+    >>b = b // 10
   >  >
-    >>robot.move(5 - d, 5 + d)
+    >>robot.move(5 - b, 5 + b)
   >  >
   
 - Va déteter un objet avec le capteur ultrason (position 0 variable):
