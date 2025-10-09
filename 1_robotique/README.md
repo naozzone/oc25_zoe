@@ -14,93 +14,92 @@ Dans ce projet nous programmons le robot kitronik move
 Dans ce mini projet le robot:
 
 - Définition des constantes :
->MAX_PROGRAMS = 2
->
->SECURITY_DISTANCE = 20
->
+```
+MAX_PROGRAMS = 2
 
->SPEED_SLOW = 10
->
->SPEED_NORMAL = 20
->
->SPEED_TURN = 60
->
->SPEED_BACKWARD = -60
->
+SECURITY_DISTANCE = 20
 
->prog = 0
->
->display.show(prog)
->
+
+SPEED_SLOW = 10
+
+SPEED_NORMAL = 20
+
+SPEED_TURN = 60
+
+SPEED_BACKWARD = -60
+
+
+prog = 0
+
+display.show(prog)
+
 
 - Initialisation du robot :
->robot = KitronikMOVEMotor.MOVEMotor()
->
->robot.move(0, 0)
->
->robot.goToPosition(1, 160)
->
+robot = KitronikMOVEMotor.MOVEMotor()
+
+robot.move(0, 0)
+
+robot.goToPosition(1, 160)
+```
 
 - Commence le parcours à une position A
 - Temps entre la position A (début) et l'objet (même durée utilisé pour revenir à la position A) :
-    >init_time = running_time()
-    >
-    >robot.goToPosition(1, 160)
-    >
+```
+  init_time = running_time()
+    
+  robot.goToPosition(1, 160)
+    
   
 - Va suivre une ligne (définition d'une fonction) :
-  >def suivre_ligne(speed):
-  >
-    >>left = pin1.read_analog()
-  >  >
-    >>right = pin2.read_analog()
-  >  >
-    >>difference = (left - right) // 10
-  >  >
-    >>robot.move(speed - difference, speed + difference)
-  >  >
-  
-   >def program_suivre_ligne():
-  >
-    
-    >>while True:  # Programme 0: Suivi de ligne simple
-    >>
-        >>>if button_a.was_pressed():
-    >>    >
-            >>>>robot.move(0, 0)
-    >>    >    >
-            >>>>return True  # Indique qu'il faut changer de programme
-    >>    >    >
+```
+    ### Fonction pour suivre une ligne noire avec les capteurs
+    left = pin1.read_analog()
+    right = pin2.read_analog()
 
-        >>>suivre_ligne(SPEED_NORMAL)
+    # Calcul de la différence pour la correction
+    difference = (left - right) // 10
+    
+    # Ajustement des vitesses des moteurs
+    robot.move(speed - difference, speed + difference)
+```
+```
+def program_suivre_ligne():
+    ### Programme 0: Suivi de ligne simple
+    while True:
+        if button_a.was_pressed():
+            robot.move(0, 0)
+            return True  # Indique qu'il faut changer de programme
+
+        suivre_ligne(SPEED_NORMAL) 
+```
    
 - Va déteter un objet avec le capteur ultrason (position 0 variable):
-  >def mesure_distance():
-  >
-    >>trigger = pin13
-  >  >
-    >>echo =pin14
-  >  >
-    >>trigger.write_digital(1)
-  >  >
-    >>time.sleep_us(10)
-  >  >
-    >>trigger.write_digital(0)
-  >  >
-    >>duration = time_pulse_us(echo, 1)
-    >>distance_cm = (duration/2e6)*340*100 # *100 pour avoir en cm
-  >  >
-    >>return distance_cm
-  >  >
-  
+```
+def mesure_distance():
+    ### Mesure la distance avec le capteur ultrasonique
+    trigger = pin13
+    echo = pin14
+
+    # Envoi d'une impulsion
+    trigger.write_digital(1)
+    trigger.write_digital(0)
+
+    # Calcul de la distance en centimètres
+    duration = time_pulse_us(echo, 1)
+    distance_cm = (duration / 2e6)*340*100
+    # d = time_pulse_us(echo, 1)/2e6*340*100 # *100 pour avoir en cm
+    return distance_cm
+```
 - Va tourner de 180 degrée et attraper l'objet:
-  >robot.move(SPEED_TURN, -SPEED_TURN, 1300)  # Rotation 180°
-  >
-  >robot.move(SPEED_BACKWARD, SPEED_BACKWARD, 1000)  # Reculer
-  >
-  >robot.goToPosition(1, 20)  # Fermer la pince
-  >
-  
+```
+        distance = mesure_distance()
+
+        if distance <= 20:
+            # Récupération de l'objet
+            robot.move(SPEED_TURN, -SPEED_TURN, 1300)  # Rotation 180°
+            robot.move(SPEED_BACKWARD, SPEED_BACKWARD, 1000)  # Reculer
+            robot.goToPosition(1, 20)  # Fermer la pince
+```
 - Va amener l'objet à la position A et le relâcher :
             
             time_elapsed = running_time() - init_time # Calculer le temps pour retourner au point de départ
