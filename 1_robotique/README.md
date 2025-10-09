@@ -15,12 +15,17 @@ Dans ce mini projet le robot:
 
 - Définition des constantes :
   MAX_PROGRAMS = 2
-SECURITY_DISTANCE = 20
+>SECURITY_DISTANCE = 20
+>
 
-SPEED_SLOW = 10
-SPEED_NORMAL = 20
-SPEED_TURN = 60
-SPEED_BACKWARD = -60
+>SPEED_SLOW = 10
+>
+>SPEED_NORMAL = 20
+>
+>SPEED_TURN = 60
+>
+>SPEED_BACKWARD = -60
+>
 
 - Commence le parcours à une position A
 - Temps entre la position A (début) et l'objet (même durée utilisé pour revenir à la position A) :
