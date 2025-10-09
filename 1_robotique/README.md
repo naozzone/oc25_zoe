@@ -285,4 +285,3 @@ Vous devez utiliser:
 - des exemples de code
 - des formules mathématiques
 - des images
-- des hyperliens
