@@ -32,9 +32,10 @@ SPEED_BACKWARD = -60
 prog = 0
 
 display.show(prog)
-
+```
 
 - Initialisation du robot :
+```
 robot = KitronikMOVEMotor.MOVEMotor()
 
 robot.move(0, 0)
