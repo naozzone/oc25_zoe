@@ -90,7 +90,8 @@ Dans ce mini projet le robot:
   >
   
 - Va amener l'objet à la position A et le relâcher :
-            time_elapsed = running_time() - init_time
+            
+            time_elapsed = running_time() - init_time # Calculer le temps pour retourner au point de départ
 
             # Retour au point de départ
             while True:
