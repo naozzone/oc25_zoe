@@ -63,7 +63,7 @@ Dans ce mini projet le robot:
    >def program_suivre_ligne():
   >
     
-    >>while True:### Programme 0: Suivi de ligne simple
+    >>while True:  # Programme 0: Suivi de ligne simple
     >>
         >>>if button_a.was_pressed():
     >>    >
