@@ -14,7 +14,8 @@ Dans ce projet nous programmons le robot kitronik move
 Dans ce mini projet le robot:
 
 - Définition des constantes :
-  MAX_PROGRAMS = 2
+>MAX_PROGRAMS = 2
+>
 >SECURITY_DISTANCE = 20
 >
 
@@ -25,6 +26,19 @@ Dans ce mini projet le robot:
 >SPEED_TURN = 60
 >
 >SPEED_BACKWARD = -60
+>
+
+>prog = 0
+>
+>display.show(prog)
+>
+
+- Initialisation du robot :
+>robot = KitronikMOVEMotor.MOVEMotor()
+>
+>robot.move(0, 0)
+>
+>robot.goToPosition(1, 160)
 >
 
 - Commence le parcours à une position A
