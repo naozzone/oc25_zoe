@@ -43,14 +43,9 @@ Dans ce mini projet le robot:
 
 - Commence le parcours à une position A
 - Temps entre la position A (début) et l'objet (même durée utilisé pour revenir à la position A) :
-    >t1 = time.ticks_ms()
+    >init_time = running_time()
     >
-    >dt = t1 - t0 # durée jusqu'à l'objet
-    >
-    >t2 = time.ticks_ms()
-    >
-    >while time.ticks_diff(time.ticks_ms(), t2) < dt: # instant dans le futur ou il doit s'arreter
-                suivre_ligne()  
+    >robot.goToPosition(1, 160)
     >
   
 - Va suivre une ligne (définition d'une fonction) :
@@ -68,8 +63,12 @@ Dans ce mini projet le robot:
   >  >
   
 - Va déteter un objet avec le capteur ultrason (position 0 variable):
-  >def distance():
+  >def mesure_distance():
   >
+    >>trigger = pin13
+  >  >
+    >>echo =pin14
+  >  >
     >>trigger.write_digital(1)
   >  >
     >>time.sleep_us(10)
@@ -79,26 +78,27 @@ Dans ce mini projet le robot:
     >>duration = time_pulse_us(echo, 1)
     >>distance_cm = (duration/2e6)*340*100 # *100 pour avoir en cm
   >  >
-    >>return round(d)
+    >>return distance_cm
   >  >
   
-- Va tourner de 180 degrée (définition d'une fonction) :
-  >def tourner():
+- Va tourner de 180 degrée et attraper l'objet:
+  >robot.move(SPEED_TURN, -SPEED_TURN, 1300)  # Rotation 180°
   >
-    >>robot.move(70, -70, 1000)
-  >  >
-    >>robot.move(0, 0)
-  >  >
-    >>sleep(500)
-  >  >
-  
-- Va attraper l'objet avec la pince :
-  >robot.goToPosition(1, 20)
+  >robot.move(SPEED_BACKWARD, SPEED_BACKWARD, 1000)  # Reculer
   >
-  >sleep(1000)
+  >robot.goToPosition(1, 20)  # Fermer la pince
   >
   
-- Va amener l'objet à la position A
+- Va amener l'objet à la position A et le relâcher :
+            time_elapsed = running_time() - init_time
+
+            # Retour au point de départ
+            while True:
+                new_time = running_time() - time_elapsed - init_time
+
+                if time_elapsed <= new_time:
+                    robot.move(0, 0)
+                    robot.goToPosition(1, 20)  # Relâcher l'objet
 
 ## Partie libre
 
