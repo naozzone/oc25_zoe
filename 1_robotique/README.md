@@ -123,6 +123,8 @@ def danser():
     robot.goToPosition(1, 160) # ouvre pince 
     robot.goToPosition(1, 20) # ferme pince
     robot.move(0, 120, 1000) # tourne autre sens
+    display.show(Image.HAPPY)
+    sleep(500)
  ```
 
 - Un dessin
