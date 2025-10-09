@@ -162,27 +162,27 @@ import KitronikMOVEMotor
 from machine import time_pulse_us 
 import time
 
- #Définition des constantes
+#Définition des constantes
 MAX_PROGRAMS = 2
 SECURITY_DISTANCE = 20
 
- #Vitesses des moteurs
+#Vitesses des moteurs
 SPEED_SLOW = 10
 SPEED_NORMAL = 20
 SPEED_TURN = 60
 SPEED_BACKWARD = -60
 
- #Initialisation du robot
+#Initialisation du robot
 robot = KitronikMOVEMotor.MOVEMotor()
 robot.move(0, 0)
 robot.goToPosition(1, 160)
 
- #Variables globales
+#Variables globales
 prog = 0
 display.show(prog)
 
 def suivre_ligne(speed):
-    ### Fonction pour suivre une ligne noire avec les capteurs
+    # Fonction pour suivre une ligne noire avec les capteurs
     left = pin1.read_analog()
     right = pin2.read_analog()
 
@@ -193,7 +193,7 @@ def suivre_ligne(speed):
     robot.move(speed - difference, speed + difference)
 
 def mesure_distance():
-    ### Mesure la distance avec le capteur ultrasonique
+    # Mesure la distance avec le capteur ultrasonique
     trigger = pin13
     echo = pin14
 
@@ -208,7 +208,7 @@ def mesure_distance():
     return distance_cm
 
 def program_suivre_ligne():
-    ### Programme 0: Suivi de ligne simple
+    # Programme 0: Suivi de ligne simple
     while True:
         if button_a.was_pressed():
             robot.move(0, 0)
@@ -224,7 +224,7 @@ def danser():
 
 
 def program_obstacle_detection():
-    ### Programme 1: Détection d'obstacles et récupération d'objets
+    # Programme 1: Détection d'obstacles et récupération d'objets
     init_time = running_time()
     robot.goToPosition(1, 160)
 
