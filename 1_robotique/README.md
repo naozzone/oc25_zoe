@@ -61,14 +61,20 @@ Dans ce mini projet le robot:
   >  >
     >>robot.move(5 - b, 5 + b)
   >  >
-   def program_suivre_ligne():
+   >def program_suivre_ligne():
+  >
     
-    while True:### Programme 0: Suivi de ligne simple
-        if button_a.was_pressed():
-            robot.move(0, 0)
-            return True  # Indique qu'il faut changer de programme
+    >>while True:### Programme 0: Suivi de ligne simple
+    >>
+        >>>if button_a.was_pressed():
+    >>    >
+            >>>>robot.move(0, 0)
+    >>    >    >
+            >>>>return True  # Indique qu'il faut changer de programme
+    >>    >    >
 
-        suivre_ligne(SPEED_NORMAL) 
+        >>>suivre_ligne(SPEED_NORMAL)
+   
 - Va déteter un objet avec le capteur ultrason (position 0 variable):
   >def mesure_distance():
   >
