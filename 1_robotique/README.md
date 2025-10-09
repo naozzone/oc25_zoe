@@ -156,7 +156,7 @@ Une partie complétement libre où le robot pourra faire:
             display.show(prog)
 
 ### Programme total
-
+```
 from microbit import *
 import KitronikMOVEMotor
 from machine import time_pulse_us 
@@ -275,7 +275,7 @@ while True:
         if program_obstacle_detection():
             prog = (prog + 1) % MAX_PROGRAMS
             display.show(prog)
-            
+```            
 ## Documentation
 
 Toute la documentation se trouvve dans ce ficher README.md
