@@ -55,12 +55,11 @@ Dans ce mini projet le robot:
   >  >
     >>right = pin2.read_analog()
   >  >
-    >>difference = (left - right)
+    >>difference = (left - right) // 10
   >  >
-    >>difference = b // 10
+    >>robot.move(speed - difference, speed + difference)
   >  >
-    >>robot.move(5 - b, 5 + b)
-  >  >
+  
    >def program_suivre_ligne():
   >
     
