@@ -74,7 +74,7 @@ def program_suivre_ligne():
         suivre_ligne(SPEED_NORMAL) 
 ```
    
-- Va déteter un objet avec le capteur ultrason (position 0 variable):
+- Va détecter un objet avec le capteur ultrason (position 0 variable):
 ```
 def mesure_distance():
     ### Mesure la distance avec le capteur ultrasonique
