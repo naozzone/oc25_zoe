@@ -117,17 +117,14 @@ def mesure_distance():
 Une partie complétement libre où le robot pourra faire:
 
 - Une danse (définition d'une fonction) :
-  >def danser():
-  >
-    >>robot.move(120, 0, 1000) # tourne
-  >  >
-    >>robot.goToPosition(1, 160) # ouvre pince
-  >  >
-    >>robot.goToPosition(1, 20) # ferme pince
-  >  >
-    >>robot.move(0, 120, 1000) # tourne autre sens
-  >  >
-  
+ ```
+def danser():
+    robot.move(120, 0, 1000) # tourne
+    robot.goToPosition(1, 160) # ouvre pince 
+    robot.goToPosition(1, 20) # ferme pince
+    robot.move(0, 120, 1000) # tourne autre sens
+ ```
+
 - Un dessin
 - Un light-show
 - Parler
