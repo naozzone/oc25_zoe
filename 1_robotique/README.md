@@ -136,7 +136,25 @@ Une partie complétement libre où le robot pourra faire:
 - Faire de la musique
 
 ### Programme final
-    
+    while True:
+    # Navigation entre les programmes avec le bouton A
+    if button_a.was_pressed():
+        robot.move(0, 0)
+        prog = (prog + 1) % MAX_PROGRAMS
+        display.show(prog)
+
+    # Exécution du programme sélectionné
+    if prog == 0:
+        # Programme 0: Suivi de ligne
+        if program_suivre_ligne():
+            prog = (prog + 1) % MAX_PROGRAMS
+            display.show(prog)
+
+    elif prog == 1:
+        # Programme 1: Détection d'obstacles
+        if program_obstacle_detection():
+            prog = (prog + 1) % MAX_PROGRAMS
+            display.show(prog)
 ## Documentation
 
 Toute la documentation se trouvve dans ce ficher README.md
