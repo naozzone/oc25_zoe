@@ -48,7 +48,7 @@ robot.goToPosition(1, 160)
   init_time = running_time()
     
   robot.goToPosition(1, 160)
-    
+```   
   
 - Va suivre une ligne (définition d'une fonction) :
 ```
