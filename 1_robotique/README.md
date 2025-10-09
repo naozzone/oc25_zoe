@@ -4,7 +4,7 @@ Option complémentaire en informatique du gymnase du Bugnon
 
 ## Description
 
-Dans ce projet nous programmons le robot kitronik move
+Dans ce projet nous programmons le robot Kitronik Move.
 
 ![Kitronikmove](images/robot.jpg)
 
