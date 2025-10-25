@@ -275,6 +275,31 @@ while True:
             prog = (prog + 1) % MAX_PROGRAMS
             display.show(prog)
 ```            
+## Difficultés rencontrées
+
+Lors de ce projet, nous avons rencontré de nombreux problèmes et difficultés :
+- gestion du temps
+- le code ne fonctionnait pas ou qu'en partie : le robot n'avançait pas lors qu'on appuie sur le bouton b (démarre le code), il commençait à suivre le code seulement quand il détectait un objet
+- la pince ne se fermait pas totalement pour un des robots (le code était correcte, le problème venait du robot)
+- le deuxième robot s'allumait puis s'éteingnait encore et encore après un accident (chute)
+- le premier capteur ne fonctionnait pas bien et le second capteur a un autre problème : il renvoie parfois des valeurs commme 1003 ou 1007, alors qu'il renvoyait par exemple que des valeurs entre 100 et 105
+
+## Piste d'amélioration
+
+Beaucoup de choses auraient pu être mieux, on peut progresser :
+- Faire plus attention à nos robots (plus d'accident, apprendre à les réparer en cas de soucis, etc.)
+- Mieux gérer notre temps, apprendre à mieux s'organiser
+- ...
+
+## Ce qu'on a appris
+
+Lors de ce projet, nous avons appris de nombreuses choses :
+- Comprendre et bien utiliser Github
+- Bien structurer du code
+- Comment bien documenter (avec le README)
+- Diverses connaissances sur la robotique (ex : composants d'un robot Kitronik)
+- Nous avons élargi nos connaissances sur le language Python
+
 ## Documentation
 
 Toute la documentation se trouvve dans ce ficher README.md
