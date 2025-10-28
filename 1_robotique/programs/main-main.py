@@ -1,129 +1,135 @@
-# Imports go at the top
+###
+### Gymnase du Bugnon
+### Author: Zoé et Emmma
+### Date: 08.10.25
+### Version: 9
+###
+### Programme d'utilisation du robot Kitronik MOVE avec capteur ultrason et suivi de ligne
+###
+
 from microbit import *
-from machine import time_pulse_us
-import KitronikMOVEMotor 
-import music
-import radio
-#import neopixel
-#import random
-import time 
+import KitronikMOVEMotor
+from machine import time_pulse_us 
+import time
 
-trigger = pin13
-echo = pin14
+# Définition des constantes
+MAX_PROGRAMS = 2
+OPEN_PLIERS = 160
+CLOSE_PLIERS = 20
+SECURITY_DISTANCE = 20
+SOUND_SPEED_MS = 340
 
-trigger.write_digital(0)
-echo.read_digital()
+# Vitesses des moteurs
+SPEED_SLOW = 10
+SPEED_NORMAL = 20
+SPEED_TURN = 60
+SPEED_BACKWARD = -60
 
+# Temps de rotation (en millisecondes)
+TURN_180_TIME = 1300
+BACKWARD_TIME = 1000
+
+# Initialisation du robot
 robot = KitronikMOVEMotor.MOVEMotor()
 robot.move(0, 0)
-robot.goToPosition(1, 90)
+robot.goToPosition(1, OPEN_PLIERS)
 
-# le group doit correspondre au kit (1..15)
-g = 9
-display.scroll(g)
-radio.on()
-radio.config(group=g)
-
-prog = 0 # programme actuel (0..9)
+# Variables globales
+prog = 0
 display.show(prog)
 
-def distance ():
+def follow_line(speed):
+    ### Fonction pour suivre une ligne noire avec les capteurs
+    left_sensor = pin1.read_analog()
+    right_sensor = pin2.read_analog()
+
+    # Calcul de la différence pour la correction
+    difference = (left_sensor - right_sensor) // 10
+
+    # Ajustement des vitesses des moteurs
+    robot.move(speed - difference, speed + difference)
+
+def measure_distance():
+    ### Mesure la distance avec le capteur ultrasonique
+    trigger = pin13
+    echo = pin14
+
+    # Envoi d'une impulsion
     trigger.write_digital(1)
     trigger.write_digital(0)
-    d = time_pulse_us(echo, 1)/2e6*340*100 # *100 pour avoir en cm
-    #print(distance)
-    display.scroll(str(round(d)))
-    
-while True:
 
-    robot.goToPosition(1, 160) # pince ouverte (pour la refermer après pour attraper objet)
-    
-    # le bouton A incrémente les programmes (0..9)
+    # Calcul de la distance en centimètres
+    duration = time_pulse_us(echo, 1)
+    distance_cm = (duration / 2e6) * SOUND_SPEED_MS * 100
+
+    return distance_cm
+
+def program_line_following():
+    ### Programme 0: Suivi de ligne simple
+    while True:
+        if button_a.was_pressed():
+            robot.move(0, 0)
+            return True  # Indique qu'il faut changer de programme
+
+        follow_line(SPEED_NORMAL)
+
+def program_obstacle_detection():
+    ### Programme 1: Détection d'obstacles et récupération d'objets
+    init_time = running_time()
+    robot.goToPosition(1, OPEN_PLIERS)
+
+    while True:
+        # Vérification si on doit changer de programme
+        if button_a.was_pressed():
+            robot.move(0, 0)
+            return True  # Indique qu'il faut changer de programme
+
+        # Mesure de distance
+        distance = measure_distance()
+
+        if distance <= SECURITY_DISTANCE:
+            # Récupération de l'objet
+            robot.move(SPEED_TURN, -SPEED_TURN, TURN_180_TIME)  # Rotation 180°
+            robot.move(SPEED_BACKWARD, SPEED_BACKWARD, BACKWARD_TIME)  # Reculer
+            robot.goToPosition(1, CLOSE_PLIERS)  # Fermer la pince
+            
+            # Calculer le temps pour retourner au point de départ
+            time_elapsed = running_time() - init_time
+
+            # Retour au point de départ
+            while True:
+                new_time = running_time() - time_elapsed - init_time
+
+                if time_elapsed <= new_time:
+                    robot.move(0, 0)
+                    robot.goToPosition(1, OPEN_PLIERS)  # Relâcher l'objet
+
+                    while True:
+                        if button_a.was_pressed():
+                            return True  # Changer de programme
+                    break
+                else:
+                    follow_line(SPEED_SLOW)
+        else:
+            follow_line(SPEED_NORMAL)
+
+# Programme principal
+while True:
+    # Navigation entre les programmes avec le bouton A
     if button_a.was_pressed():
         robot.move(0, 0)
-        prog = (prog + 1) % 10
+        prog = (prog + 1) % MAX_PROGRAMS
         display.show(prog)
-        music.pitch(440, 20)
 
-    # faire bouger le robot avec les 4 touches de direction
-    # L/R pour pivoter, U/D pour avancer et reculer
-    # F1: ouvrir la pince, F2: fermer la pince
+    # Exécution du programme sélectionné
     if prog == 0:
-        msg = radio.receive()
-        if msg:
-            display.show(msg)
-            if msg == '0':
-                robot.move(0, 0)
-            elif msg == 'u':
-                robot.move(-80, -80)
-            elif msg == 'r':
-                robot.move(80, -80)
-            elif msg == 'l':
-                robot.move(-80, 80)
-            elif msg == 'd':
-                robot.move(80, 80)
-            elif msg == '2':
-                robot.goToPosition(1, 20)
-            elif msg == '1':
-                robot.goToPosition(1, 160)
+        # Programme 0: Suivi de ligne
+        if program_line_following():
+            prog = (prog + 1) % MAX_PROGRAMS
+            display.show(prog)
 
-
-    if prog == 0:
-        trigger.write_digital(1)
-        trigger.write_digital(0)
-        d = time_pulse_us(echo, 1)/2e6*340*100 # *100 pour avoir en cm
-        #print(distance)
-        display.scroll(str(round(d)))       
-
-    if prog == 1:
-        sleep(0)
-        
-
-    if prog == 2:    
-        # suivre une ligne du parcours 
-        left = pin1.read_analog()
-        right = pin2.read_analog()
-        d = (left - right)
-        d = d // 20
-        robot.move( 5 - d, 5 + d)
-
-    if prog == 3:
-        if distanc() < 20:
-            robot.move(0, 0)
-            sleep(500)
-        
-                # Capteur ultrason : détection objet
-                
-
-        
-                    # Demi-tour
-                    robot.move(80, -80, 2000)
-                    robot.move(0, 0)
-                    sleep(500)
-        
-                    # Fermer la pince
-                    robot.goToPosition(1, 20)
-                    sleep(1000)
-            
-                    # Revenir à la position A en refaisant le même temps 
-                
-                    t1 = time.ticks_ms()  # Temps jusqu'à l'objet pour déterminer le temps entre point A et objet.
-                    left = pin1.read_analog()
-                    right = pin2.read_analog()  
-                    d = (left - right) 
-                    d = d // 10 
-                    robot.move(40 - d, 40 + d)
-                
-            
-                    robot.move(0, 0)
-                    sleep(500)
-            
-                    # Déposer l'objet
-                    robot.goToPosition(1, 160)
-                    sleep(1000)
-        
-                    # libre (petite dance) il tourne sur lui même en fermant et ouvrant sa pince
-                    for i in range (2): 
-                        robot.move(120,0,1000) # tourne
-                        robot.goToPosition(1,160)
-                
+    elif prog == 1:
+        # Programme 1: Détection d'obstacles
+        if program_obstacle_detection():
+            prog = (prog + 1) % MAX_PROGRAMS
+            display.show(prog)
