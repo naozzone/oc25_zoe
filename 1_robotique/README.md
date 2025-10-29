@@ -108,7 +108,14 @@ def danser():
     sleep(500)
  ```
 - Un petit bruitage quand l'objet est attrapé : sound = ['E4:4', 'G4:4', 'A4:4', 'E5:8']
-- Un dessin
+- Un dessin :
+```
+            for i in range (5):
+                robot.move(60, 60, 1000)
+                robot.move(60, -60, 1000)
+                robot.move(60, 60, 1000)
+                robot.move(-30, 60, 1000)
+```
 - Un light-show
 - Parler
 - Faire de la musique
@@ -150,6 +157,7 @@ if prog == 8:
             danser()
             display.show(Image.HAPPY)
             sleep(500)
+
 ```
 
 ### Programme total
