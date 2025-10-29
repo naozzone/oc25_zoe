@@ -158,6 +158,15 @@ if prog == 8:
             display.show(Image.HAPPY)
             sleep(500)
 
+    if prog == 9:
+        if button_b.was_pressed():
+            display.clear()
+
+            for i in range (5):
+                robot.move(60, 60, 1000)
+                robot.move(60, -60, 1000)
+                robot.move(60, 60, 1000)
+                robot.move(-30, 60, 1000)
 ```
 
 ### Programme total
@@ -367,7 +376,17 @@ while True:
             sleep(500)
             danser()
             display.show(Image.HAPPY)
-            sleep(500)                    
+            sleep(500)
+
+    if prog == 9:
+        if button_b.was_pressed():
+            display.clear()
+
+            for i in range (5):
+                robot.move(60, 60, 1000)
+                robot.move(60, -60, 1000)
+                robot.move(60, 60, 1000)
+                robot.move(-30, 60, 1000)                    
 ```            
 ## Difficultés rencontrées
 
