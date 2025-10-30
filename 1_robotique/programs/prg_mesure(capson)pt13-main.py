@@ -177,7 +177,7 @@ while True:
             t0 = time.ticks_ms()
 
         # 2. Suivre la ligne jusqu'à détecter un objet
-            while distance() > 15:
+            while distance() > 20:
                 suivre_ligne()
             
         # 3. Arrêt + mesure du temps aller
