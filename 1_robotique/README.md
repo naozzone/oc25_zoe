@@ -397,6 +397,7 @@ Lors de ce projet, nous avons rencontré de nombreux problèmes et difficultés 
 - le deuxième robot s'allumait puis s'éteingnait encore et encore après un accident (chute)
 - le premier capteur ne fonctionnait pas bien et le second capteur a un autre problème : il renvoie parfois des valeurs commme 1003 ou 1007, alors qu'il renvoyait par exemple que des valeurs entre 100 et 105
 - Le robot ne reviens pas à la position A
+- Faire un dessin avec une forme correcte
 
 ## Piste d'amélioration
 
