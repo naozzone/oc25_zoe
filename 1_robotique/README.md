@@ -399,7 +399,7 @@ Lors de ce projet, nous avons rencontré de nombreux problèmes et difficultés 
 Beaucoup de choses auraient pu être mieux, on peut progresser :
 - Faire plus attention à nos robots (plus d'accident, apprendre à les réparer en cas de soucis, etc.)
 - Mieux gérer notre temps, apprendre à mieux s'organiser
-- ...
+- Utiliser la télécommande pour changer de programme
 
 ## Ce qu'on a appris
 
