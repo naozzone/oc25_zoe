@@ -39,12 +39,7 @@ robot.goToPosition(1, 160)
 ```
 
 - Commence le parcours à une position A
-- Temps entre la position A (début) et l'objet (même durée utilisé pour revenir à la position A) :
-```
-  init_time = running_time()
-    
-  robot.goToPosition(1, 160)
-```   
+- Temps entre la position A (début) et l'objet (même durée utilisé pour revenir à la position A) : avec time.ticks_ms()
   
 - Va suivre une ligne (définition d'une fonction) :
 ```
