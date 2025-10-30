@@ -166,7 +166,7 @@ if prog == 8:
                 robot.move(60, 60, 1000)
                 robot.move(60, -60, 1000)
                 robot.move(60, 60, 1000)
-                robot.move(-30, 60, 1000)
+                robot.move(-20, 60, 1000)
 ```
 
 ### Programme total
@@ -386,7 +386,7 @@ while True:
                 robot.move(60, 60, 1000)
                 robot.move(60, -60, 1000)
                 robot.move(60, 60, 1000)
-                robot.move(-30, 60, 1000)                    
+                robot.move(-20, 60, 1000)                    
 ```            
 ## Difficultés rencontrées
 
