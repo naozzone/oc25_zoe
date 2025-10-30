@@ -417,7 +417,7 @@ Lors de ce projet, nous avons appris de nombreuses choses :
 
 ## Documentation
 
-Toute la documentation se trouvve dans ce ficher README.md
+Toute la documentation se trouve dans ce ficher README.md
 
 Vous devez utiliser:
 
