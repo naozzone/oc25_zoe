@@ -39,12 +39,7 @@ robot.goToPosition(1, 160)
 ```
 
 - Commence le parcours à une position A
-- Temps entre la position A (début) et l'objet (même durée utilisé pour revenir à la position A) :
-```
-  init_time = running_time()
-    
-  robot.goToPosition(1, 160)
-```   
+- Temps entre la position A (début) et l'objet (même durée utilisé pour revenir à la position A) : avec time.ticks_ms()
   
 - Va suivre une ligne (définition d'une fonction) :
 ```
@@ -404,7 +399,7 @@ Lors de ce projet, nous avons rencontré de nombreux problèmes et difficultés 
 Beaucoup de choses auraient pu être mieux, on peut progresser :
 - Faire plus attention à nos robots (plus d'accident, apprendre à les réparer en cas de soucis, etc.)
 - Mieux gérer notre temps, apprendre à mieux s'organiser
-- ...
+- Utiliser la télécommande pour changer de programme
 
 ## Ce qu'on a appris
 
@@ -417,7 +412,7 @@ Lors de ce projet, nous avons appris de nombreuses choses :
 
 ## Documentation
 
-Toute la documentation se trouvve dans ce ficher README.md
+Toute la documentation se trouve dans ce ficher README.md
 
 Vous devez utiliser:
 
