@@ -1,0 +1,40 @@
+body{
+    background-color:azure;
+    font-family:'Times New Roman', Times, serif 
+}
+
+h1{
+    color:rgb(192, 192, 234);
+    background-color:rgb(101, 119, 156);
+    text-align: center;
+}
+
+h2, h3 {
+    color:cadetblue;
+    background-color:rgb(212	192	214	);
+}
+
+#bienvenue {
+    border: 1px solid blue;
+    font-style:italic;
+    background-color:lavender;
+
+}
+
+.important {
+    background-color:steelblue;
+    color:paleturquoise;
+    border: 2px solid black;
+}
+
+strong {
+    text-decoration: underline;
+    color:rgb(120, 129, 247);
+    font-style:oblique;
+}
+
+.important > strong {
+     text-decoration: underline wavy;
+    color:black;
+    font-style: italic;
+}
