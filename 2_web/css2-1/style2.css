@@ -1,0 +1,33 @@
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color:#8044ff;
+}
+
+#bienvenue {
+    background-color: rgb(233, 242, 249);
+    border-radius: 10px;
+}
+
+.important {
+    background-color: rgb(92 201 191 / 10%);
+    border-left: rgba(9, 98, 89, 0.1) solid 5px;
+    border-radius: 20px;
+}
+
+p {
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 20px;
+    line-height: 25px;
+}
+
+.important > strong {
+    text-decoration: underline solid;
+}

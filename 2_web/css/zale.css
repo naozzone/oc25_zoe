@@ -1,0 +1,17 @@
+a{
+    color:rgb(80, 61, 223)
+}
+p{
+    color:rgb(0, 0, 0)
+}
+h1{
+    background-color:rgb(58, 89, 180);
+    text-align:center;
+}
+h2{
+    background-color:rgba(72, 96, 199, 0.615);
+    text-align:center;
+}
+body{
+    background-color:rgb(255, 255, 255);            
+}
