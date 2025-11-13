@@ -31,3 +31,15 @@ p {
 .important > strong {
     text-decoration: underline solid;
 }
+
+.guerrier {
+    background-color: red;
+}
+
+.magician {
+    background-color: blue;
+}
+
+.voleur {
+    background-color:gray;
+}
