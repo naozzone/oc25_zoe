@@ -1,0 +1,16 @@
+h1{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border: 5px black solid;
+}
+
+a {
+    color: black;
+}
+
+
+#oc {
+    border: 10px black solid;
+    border-radius: 10px;
+}
+

@@ -1,0 +1,38 @@
+
+a{
+    color:black;
+    text-align: center;
+    width: fit-content;
+    padding : 5px;
+    border-radius: 10px;
+    background-color: rgba(222, 222, 222, 0.561);
+    border-left: rgba(0, 0, 0, 0.1) solid 5px;
+}
+
+h1{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border: 5px black solid;
+
+}
+
+h2{
+    text-align: center; 
+    background-color: rgb(199, 210, 230);
+}
+
+body {
+    background-image : url("/2_web/image/sword1.JPG"); 
+    background-size : cover; 
+    font-family:'Times New Roman', Times, serif;
+}
+
+p {
+    background-color : white;
+    border: white solid 3px;
+    width: fit-content;
+ }
+
+
+
+
