@@ -1,0 +1,49 @@
+body {
+    /* border: solid 1px green; */
+    max-width: 600px;
+    margin-left:auto;    
+       /* pour ajouter une marge égale, afin de centrer */
+    margin-right:auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h1, h2, p {
+    /* border: solid 1px orange; */
+}
+
+
+#navigation {
+     background-color: lightgrey;
+     padding-top: 5px;
+     padding-bottom:5px;
+}
+
+#navigation ul {
+    /* border: solid 1px blue; */
+    width: fit-content;
+    padding-left: 0px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#navigation li {
+    display: inline; /*aligner*/
+    /* border: solid 1px red; */
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.img-centre {
+    width:400px;
+    display:block; /*élement block afin de traiter comme un autre élement*/
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.img-float {
+    width:50px; /*image a cote du texte*/
+    float: left;
+    margin-left:10px;
+    margin-right: 10px;
+}
