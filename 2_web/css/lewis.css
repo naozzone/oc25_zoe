@@ -2,7 +2,8 @@ a{
     color:rgb(193, 88, 88)
 }
 p{
-    color:rgb(255, 105, 105)
+    background-color : rgba(0, 0, 0, 0.433);
+    color:rgb(195, 48, 48)
 }
 h1{
     background-color:rgb(159, 41, 37);
@@ -16,5 +17,9 @@ h2{
 body{
     background-image: url("/2_web/image/Lewis\ copie.jpeg");
     background-size : cover;    
-    width: fit-content;      
-}
+    width: 600px;     
+    margin-left:auto;    
+    margin-right:auto;
+    padding-left: 30px;
+    padding-right: 10px;
+} 
