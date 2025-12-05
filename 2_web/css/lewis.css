@@ -15,7 +15,7 @@ h2{
     text-align:center;
 }
 body{
-    background-image: url("/2_web/image/Lewis\ copie.jpeg");
+    background-image: url("image/Lewis\ copie.jpeg");
     background-size : cover;    
     width: 600px;     
     margin-left:auto;    
