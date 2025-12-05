@@ -22,7 +22,7 @@ h2{
 }
 
 body {
-    background-image : url("/2_web/image/sword1.JPG"); 
+    background-image : url("/image/sword1.JPG"); 
     background-size : cover; 
     font-family:'Times New Roman', Times, serif;
 }
