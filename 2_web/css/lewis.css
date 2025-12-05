@@ -15,7 +15,7 @@ h2{
     text-align:center;
 }
 body{
-    background-image: url("image/Lewiscopie.jpeg");
+    background-image: url("/2_web/image/Lewiscopie.jpeg");
     background-size : cover;    
     width: 600px;     
     margin-left:auto;    
