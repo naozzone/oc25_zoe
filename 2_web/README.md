@@ -20,7 +20,9 @@ https://bugnon.github.io/oc-2025/2_web/
 -realism.html
 
 °La page d’accueil doit présenter le sujet traiter et offrir au visiteur une table des matières du site web avec un lien vers les pages correspondantes et une brève description du contenu.
->index.html
+
+-index.html
+
 °Il doit y avoir une barre de navigation pour naviguer entre les quatre pages.
 ....
  <div class="liencategorie">
