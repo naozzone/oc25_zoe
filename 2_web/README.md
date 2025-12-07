@@ -96,7 +96,7 @@ https://naozzone.github.io/oc25_zoe/2_web/index.html
 
 ## Sujet traité
 
-j'ai traité comme sujet pour ce site web mes propres dessins que ce soit digital ou autre techniques. J'ai utilisé mes personnages que j'avais déjà travaillé pour un projet en anglais.
+j'ai traité comme sujet pour ce site web mes propres dessins que ce soit digital ou autre techniques. J'ai utilisé mes personnages que j'avais déjà travaillé pour un projet en anglais. Aussi en lien avec mon tm car ce dernier porte sur une création d'une bande-dessinée.
 
 ## Maquette
 Voici la première maquette du visuel du site web. Les pages ont été assez simplifées.
