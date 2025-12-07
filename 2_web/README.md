@@ -37,4 +37,5 @@ https://bugnon.github.io/oc-2025/2_web/
 °Il doit y avoir une animation réalisée avec canvas. (Exemples)
 °Le code doit être sur GitHub est être déployé sur le web avec GitHub Pages.
 https://naozzone.github.io/oc25_zoe/2_web/index.html
-§La page doit pouvoir s’adapter aux petits écrans (smartphone).
+
+°La page doit pouvoir s’adapter aux petits écrans (smartphone).
