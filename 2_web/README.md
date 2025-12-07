@@ -13,8 +13,6 @@ https://bugnon.github.io/oc-2025/2_web/
 
 -zale.html
 
--logan.html
-
 -ace.html
 
 -realism.html
@@ -76,6 +74,6 @@ Chaque pages d'html a sa propre page de css pour que la personnalisation des pag
 
 - la réalisation d'une animation canvas ( ratée )
 
-- 
+- déployer en site depuis github
 
 
