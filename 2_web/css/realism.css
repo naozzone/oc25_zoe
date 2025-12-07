@@ -1,0 +1,20 @@
+.dessin {
+    border: 10px black solid;
+    border-radius: 10px;
+
+}
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    width: 600px;     
+    margin-left:auto;    
+    margin-right:auto;
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+h1{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border: 5px black solid;
+}
