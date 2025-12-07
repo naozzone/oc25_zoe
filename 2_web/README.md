@@ -1,7 +1,7 @@
 # Projet WEB
 https://bugnon.github.io/oc-2025/2_web/
 
-#Cahier des charges
+# Cahier des charges
 
 ° Le site web doit contenir au minimum quatre pages dans quatre fichiers HTML différents, dont une page d’accueil.
 
