@@ -139,4 +139,6 @@ Chaque pages d'html a sa propre page de css pour que la personnalisation des pag
 
 - déployer en site depuis github
 
+- des images de fond qui ne voulaient pas apparaitre en deployant le site sur github
+
 
