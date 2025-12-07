@@ -102,6 +102,8 @@ j'ai traité comme sujet pour ce site web mes propres dessins que ce soit digita
 Voici la première maquette du visuel du site web. Les pages ont été assez simplifées.
 ![Untitled_Artwork](https://github.com/user-attachments/assets/2cb3af6a-6411-4191-bd2c-39196cd84fde)
 
+Le style des pages de bases vont rester très noir/blanc, car les pages avec mes personnages seront "personnalisées" pour chaque personnage.
+
 ## comment le code est organisé
 voici comment j'ai organisé les fichiers sur visual studio code :
 
