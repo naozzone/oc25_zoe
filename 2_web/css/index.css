@@ -22,7 +22,7 @@ h2{
 }
 
 body {
-    background-image : url("/2_web/image/sword1.JPG"); 
+    background-image : url("image/sword1.JPG"); 
     background-size : cover; 
     font-family:'Times New Roman', Times, serif;
     width: 600px;     
@@ -42,6 +42,6 @@ p {
 canvas {
     border: black solid 2px;
     background-color:white;
-    width : 500px;
+    
 }
 
