@@ -45,3 +45,25 @@ https://bugnon.github.io/oc-2025/2_web/
 https://naozzone.github.io/oc25_zoe/2_web/index.html 
 
 °La page doit pouvoir s’adapter aux petits écrans (smartphone).
+
+## Sujet traité
+
+j'ai traité comme sujet pour ce site web mes propres dessins que ce soit digital ou autre techniques.
+
+## Maquette
+Voici la première maquette du visuel du site web.
+
+## comment le code est organisé
+
+2_web
+|
+| css -> toutes les pages de css
+|
+|
+| image -> toutes les images qui apparaisent sur le site
+|
+| 
+| js
+| 
+tout le contenu en html...
+
