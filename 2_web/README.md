@@ -4,12 +4,19 @@ https://bugnon.github.io/oc-2025/2_web/
 #Cahier des charges
 
 ° Le site web doit contenir au minimum quatre pages dans quatre fichiers HTML différents, dont une page d’accueil.
+
 -index.html
+
 -oc.html
+
 -lewis.html
+
 -zale.html
+
 -logan.html
+
 -ace.html
+
 -realism.html
 
 °La page d’accueil doit présenter le sujet traiter et offrir au visiteur une table des matières du site web avec un lien vers les pages correspondantes et une brève description du contenu.
