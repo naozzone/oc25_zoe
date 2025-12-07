@@ -3,7 +3,8 @@ a{
 }
 p{
     background-color : rgba(0, 0, 0, 0.433);
-    color:rgb(195, 48, 48)
+    color:rgb(195, 48, 48);
+    text-align:justify;
 }
 h1{
     background-color:rgb(159, 41, 37);

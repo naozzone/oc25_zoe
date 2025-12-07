@@ -36,6 +36,7 @@ p {
     background-color : white;
     border: white solid 3px;
     width: fit-content;
+    text-align:justify;
  }
 
 

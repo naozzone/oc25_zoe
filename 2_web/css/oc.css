@@ -13,6 +13,10 @@ a {
     color: black;
 }
 
+p{
+    color:rgb(0, 0, 0);
+    text-align:justify;
+}
 
 #oc {
     border: 10px black solid;
@@ -27,3 +31,4 @@ a {
     padding-left: auto;
     padding-right: auto;
 }
+

@@ -2,7 +2,8 @@ a{
     color:rgb(193, 88, 88)
 }
 p{
-    color:rgb(0, 0, 0)
+    color:rgb(0, 0, 0);
+    text-align:justify;
 }
 h1{
     background-color:rgb(159, 41, 37);
