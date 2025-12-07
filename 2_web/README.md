@@ -55,15 +55,25 @@ Voici la première maquette du visuel du site web. Les pages ont été assez sim
 ## comment le code est organisé
 
 2_web
+
 |
+
 | css -> toutes les pages de css
+
 |
+
 |
+
 | image -> toutes les images qui apparaisent sur le site
+
 |
+
 | 
+
 | js
+
 | 
+
 tout le contenu en html...
 
 Chaque pages d'html a sa propre page de css pour que la personnalisation des pages soient plus simple. 
