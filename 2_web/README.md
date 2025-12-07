@@ -52,6 +52,7 @@ j'ai traité comme sujet pour ce site web mes propres dessins que ce soit digita
 
 ## Maquette
 Voici la première maquette du visuel du site web.
+![Untitled_Artwork](https://github.com/user-attachments/assets/2cb3af6a-6411-4191-bd2c-39196cd84fde)
 
 ## comment le code est organisé
 
@@ -66,4 +67,7 @@ Voici la première maquette du visuel du site web.
 | js
 | 
 tout le contenu en html...
+
+Chaque pages d'html a sa propre page de css pour que la personnalisation des pages soient plus simple. 
+
 
