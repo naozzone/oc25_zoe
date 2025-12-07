@@ -51,7 +51,7 @@ https://naozzone.github.io/oc25_zoe/2_web/index.html
 j'ai traité comme sujet pour ce site web mes propres dessins que ce soit digital ou autre techniques.
 
 ## Maquette
-Voici la première maquette du visuel du site web.
+Voici la première maquette du visuel du site web. Les pages ont été assez simplifées.
 ![Untitled_Artwork](https://github.com/user-attachments/assets/2cb3af6a-6411-4191-bd2c-39196cd84fde)
 
 ## comment le code est organisé
@@ -69,5 +69,13 @@ Voici la première maquette du visuel du site web.
 tout le contenu en html...
 
 Chaque pages d'html a sa propre page de css pour que la personnalisation des pages soient plus simple. 
+
+## Difficultés
+
+- La mise en page de toutes les images
+
+- la réalisation d'une animation canvas ( ratée )
+
+- 
 
 
