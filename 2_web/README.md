@@ -141,4 +141,8 @@ Chaque pages d'html a sa propre page de css pour que la personnalisation des pag
 
 - des images de fond qui ne voulaient pas apparaitre en deployant le site sur github
 
+exemple: de base il y avait une image derrière ce texte, c'est pourquoi il y a un fond de text noir avec une basse opacité.
+
+<img width="811" height="803" alt="Capture d&#39;écran 2025-12-07 235457" src="https://github.com/user-attachments/assets/a62c5653-a613-48b0-a37d-2e1c0cac7278" />
+<img width="807" height="431" alt="Capture d&#39;écran 2025-12-07 235354" src="https://github.com/user-attachments/assets/2e7a46df-df6d-49bf-94ca-7721f666a5ff" />
 
