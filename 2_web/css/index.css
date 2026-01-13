@@ -18,21 +18,30 @@ h1{
 
 h2{
     text-align: center; 
-    background-color: rgb(199, 210, 230);
+    background-color: rgb(187, 187, 187);
 }
 
 body {
-    background-image : url("/2_web/image/sword1.JPG"); 
+    background-image : url("image/sword1.JPG"); 
     background-size : cover; 
     font-family:'Times New Roman', Times, serif;
+    width: 600px;     
+    margin-left:auto;    
+    margin-right:auto;
+    padding-left: 30px;
+    padding-right: 10px;
 }
 
 p {
     background-color : white;
     border: white solid 3px;
     width: fit-content;
+    text-align:justify;
  }
 
-
-
+canvas {
+    border: black solid 2px;
+    background-color:white;
+    
+}
 

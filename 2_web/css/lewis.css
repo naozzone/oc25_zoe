@@ -3,7 +3,8 @@ a{
 }
 p{
     background-color : rgba(0, 0, 0, 0.433);
-    color:rgb(195, 48, 48)
+    color:rgb(195, 48, 48);
+    text-align:justify;
 }
 h1{
     background-color:rgb(159, 41, 37);
@@ -15,8 +16,9 @@ h2{
     text-align:center;
 }
 body{
-    background-image: url("/2_web/image/Lewis\ copie.jpeg");
-    background-size : cover;    
+    background-image: url("/2_web/image/Lewiscopie.jpeg");
+    background-size : cover;  
+    font-family:'Times New Roman', Times, serif;  
     width: 600px;     
     margin-left:auto;    
     margin-right:auto;
