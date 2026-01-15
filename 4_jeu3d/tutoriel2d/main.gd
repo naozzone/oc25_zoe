@@ -23,3 +23,10 @@ func _on_score_timer_timeout() -> void:
 
 func _on_start_timer_timeout() -> void:
 	pass # Replace with function body.
+
+func _on_score_timer_timeout():
+	score += 1
+
+func _on_start_timer_timeout():
+	$MobTimer.start()
+	$ScoreTimer.start()
