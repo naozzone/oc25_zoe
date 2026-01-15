@@ -1,0 +1,21 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1768481276
+icon.svg::CompressedTexture2D::6606461292126784045::1768481194::1768481276::1::::<><><>0<>0<>7a78ece4f6c3d7a509d1f6bfaa79fea9<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+README.md::TextFile::-1::1744386698::0::1::::<><><>0<>0<><>::
+::res://art/::1768481276
+enemyFlyingAlt_1.png::CompressedTexture2D::4807332564431803360::1744386698::1768481276::1::::<><><>0<>0<>d68d261de790be90cc921dad7daf0fc6<>res://.godot/imported/enemyFlyingAlt_1.png-559f599b16c69b112c1b53f6332e9489.ctex::
+enemyFlyingAlt_2.png::CompressedTexture2D::3002438049682846049::1744386698::1768481276::1::::<><><>0<>0<>1bc3071d93cd0431856575dce974765b<>res://.godot/imported/enemyFlyingAlt_2.png-31dc7310eda6e1b721224f3cd932c076.ctex::
+enemySwimming_1.png::CompressedTexture2D::8379925157426259817::1744386698::1768481276::1::::<><><>0<>0<>a7e5d6ae59b1dd3b9305db74ec6d0396<>res://.godot/imported/enemySwimming_1.png-dd0e11759dc3d624c8a704f6e98a3d80.ctex::
+enemySwimming_2.png::CompressedTexture2D::5982926131419881587::1744386698::1768481276::1::::<><><>0<>0<>20c0f13ffe1571f7863281d5012a197d<>res://.godot/imported/enemySwimming_2.png-4c0cbc0732264c4ea3290340bd4a0a62.ctex::
+enemyWalking_1.png::CompressedTexture2D::3458595427855273884::1744386698::1768481276::1::::<><><>0<>0<>97bb104d45221b763d2cd1381283410b<>res://.godot/imported/enemyWalking_1.png-5af6eedbe61b701677d490ffdc1e6471.ctex::
+enemyWalking_2.png::CompressedTexture2D::4718332526774034098::1744386698::1768481276::1::::<><><>0<>0<>aca773581bf526b2c83bc897e7a0d2e9<>res://.godot/imported/enemyWalking_2.png-67c480ed60c35e95f5acb0436246b935.ctex::
+gameover.wav::AudioStreamWAV::3881803445622248843::1744386698::1768481276::1::::<><><>0<>0<>3627ee40e32277f90fc0f36be61c469e<>res://.godot/imported/gameover.wav-98c95c744b35280048c2bd093cf8a356.sample::
+House In a Forest Loop.ogg::AudioStreamOggVorbis::5098501777445282825::1744386698::1768481276::1::::<><><>0<>0<>8f5e5f7d97fd6557ce890a1a99fc24eb<>res://.godot/imported/House In a Forest Loop.ogg-1a6a72ae843ad792b7039931227e8d50.oggvorbisstr::
+playerGrey_up1.png::CompressedTexture2D::8748563968654517817::1744386698::1768481276::1::::<><><>0<>0<>22fd70a5d5a19bf20da6d4076fd8a55d<>res://.godot/imported/playerGrey_up1.png-6bd114d0a6beac91f48e3a7314d44564.ctex::
+playerGrey_up2.png::CompressedTexture2D::5084548745170540244::1744386698::1768481276::1::::<><><>0<>0<>3f346ebc254e0ef6324dfe49a108eed2<>res://.godot/imported/playerGrey_up2.png-d6aba85f5f2675ebc7045efa7552ee79.ctex::
+playerGrey_walk1.png::CompressedTexture2D::5325356370808662335::1744386698::1768481276::1::::<><><>0<>0<>cce21f4e198d9d09cde81f54642954fd<>res://.godot/imported/playerGrey_walk1.png-c4773fe7a7bf85d7ab732eb4458c2742.ctex::
+playerGrey_walk2.png::CompressedTexture2D::8595276713257530280::1744386698::1768481276::1::::<><><>0<>0<>bc764dc3470ed09b86a413196f26ab8e<>res://.godot/imported/playerGrey_walk2.png-34d2d916366100182d08037c51884043.ctex::
+::res://fonts/::1768481276
+FONTLOG.txt::TextFile::-1::1744386698::0::1::::<><><>0<>0<><>::
+LICENSE.txt::TextFile::-1::1744386698::0::1::::<><><>0<>0<><>::
+Xolonium-Regular.ttf::FontFile::1228401157155993019::1744386698::1768481276::1::::<><><>0<>0<>3e6348d0f261eacda471d860d06cf1d6<>res://.godot/imported/Xolonium-Regular.ttf-bc2981e3069cff4c34dd7c8e2bb73fba.fontdata::
