@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://bfb0pbbdh5yai"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_di8lf"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dcia8"]
+albedo_color = Color(0, 0, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dsk24"]
+albedo_color = Color(0, 1, 0, 1)
+
+[node name="ex2" type="Node3D" unique_id=1033616791]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1763569897]
+material = SubResource("StandardMaterial3D_di8lf")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="CSGBox3D" unique_id=1583661820]
+operation = 1
+radius = 0.7
+radial_segments = 24
+rings = 12
+material = SubResource("StandardMaterial3D_dcia8")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGBox3D/CSGSphere3D" unique_id=1995272005]
+operation = 2
+radius = 0.3
+sides = 24
+material = SubResource("StandardMaterial3D_dsk24")
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="CSGBox3D/CSGSphere3D/CSGCylinder3D" unique_id=869649426]
+transform = Transform3D(-0.054078758, 0.998462, -0.0121991765, -1.0680489e-09, -0.012217053, -0.9999253, -0.99853665, -0.054074716, 0.00066068413, 0, 0, 0)
+radius = 0.3
+sides = 24
+material = SubResource("StandardMaterial3D_dsk24")
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="CSGBox3D/CSGSphere3D/CSGCylinder3D/CSGCylinder3D3" unique_id=112409248]
+transform = Transform3D(-0.026207563, -0.99965286, -0.0027255833, -0.02244394, 0.003314233, -0.99974275, 0.99940467, -0.026139647, -0.022523005, 0, 0, 0)
+radius = 0.3
+sides = 24
+material = SubResource("StandardMaterial3D_dsk24")
