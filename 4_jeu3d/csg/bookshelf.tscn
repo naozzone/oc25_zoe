@@ -1,0 +1,58 @@
+[gd_scene format=4 uid="uid://dur38y1c06871"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3d0ab"]
+albedo_color = Color(0.39607844, 0.3254902, 0.20392157, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_leg5n"]
+albedo_color = Color(0.39607844, 0.3254902, 0.20392157, 1)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_nera2"]
+_surfaces = [{
+"aabb": AABB(-4.9269996, -0.102, -3.6220002, 1, 3, 3.0500002),
+"attribute_data": PackedByteArray("AAAAAAAAAACCSwY87+7uPm3eJz2LiIg9AACAPwAAAAAAAAAAAAAAAG3eJz2LiIg9AAAAAAAAAACCSwY8iYgIP4JLBjzv7u4+bd4nPYuIiD2CSwY87+7uPm3eJz3v7u4+AACAPwAAAABt3ic9i4iIPRmCdT+LiIg9AACAPwAAAAAZgnU/i4iIPdLmfT/v7u4+GYJ1P4uIiD0ZgnU/7+7uPtLmfT/v7u4+AACAPwAAAADS5n0/7+7uPgAAgD8AAIA/AACAPwAAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAAAAAAAAAAAAAAAAAgD8AAIA/AAAAAAAAAAAAAAAAAACAP4JLBjyJiAg/bd4nPe/ubj9t3ic9iYgIP4JLBjyJiAg/bd4nPe/ubj+CSwY8iYgIPwAAAAAAAIA/GYJ1P+/ubj9t3ic97+5uPwAAAAAAAIA/AACAPwAAgD8AAAAAAAAAAAAAAAAAAIA/AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAGYJ1P+/ubj/S5n0/iYgIPxmCdT+JiAg/AACAPwAAgD/S5n0/7+7uPtLmfT+JiAg/GYJ1P+/ubj8AAAAAAACAPwAAgD8AAIA/GYJ1P+/ubj8AAIA/AACAP9LmfT+JiAg/AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAgD9t3ic97+5uP4JLBjyJiAg/GYJ1P+/ubj9t3ic97+5uPwAAAAAAAIA/AAAAAAAAgD+CSwY8iYgIP4JLBjzv7u4+bd4nPe/ubj9t3ic9iYgIP4JLBjyJiAg/AACAPwAAgD8ZgnU/7+5uPwAAAAAAAIA/AACAPwAAgD8ZgnU/iYgIPxmCdT/v7m4/AACAPwAAgD/S5n0/iYgIPxmCdT+JiAg/AACAPwAAgD8AAIA/AAAAANLmfT+JiAg/AAAAAAAAgD+CSwY87+7uPgAAAAAAAAAAAAAAAAAAAACCSwY87+7uPm3eJz3v7u4+bd4nPYuIiD0AAAAAAAAAAG3eJz3v7u4+AACAPwAAAAAAAAAAAAAAAG3eJz2LiIg9AACAPwAAgD8AAAAAAAAAAAAAAAAAAIA/AACAPwAAgD8AAAAAAAAAAAAAAAAAAIA/GYJ1P4uIiD0ZgnU/7+7uPtLmfT/v7u4+AACAPwAAAADS5n0/7+7uPtLmfT+JiAg/GYJ1P4uIiD0AAIA/AAAAAG3eJz2LiIg9GYJ1P4uIiD3S5n0/7+7uPgAAgD8AAAAA"),
+"format": 34359738391,
+"material": SubResource("StandardMaterial3D_3d0ab"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 120,
+"vertex_data": PackedByteArray("+6mdwGDl0L3azmfA+6mdwN0kpj9ANWbA+6mdwEC0yD3azl/A+6mdwGDl0L2abhK/+6mdwGDl0L3azmfA+6mdwEC0yD3azl/A+6mdwGDl0L3azmfA+6mdwHe+vz9ANWbA+6mdwN0kpj9ANWbA+6mdwEC0yD3azl/A+6mdwN0kpj9ANWbA+6mdwN0kpj/azl/A+6mdwGDl0L2abhK/+6mdwEC0yD3azl/A+6mdwEC0yD2abjK/+6mdwGDl0L2abhK/+6mdwEC0yD2abjK/+6mdwN0kpj8A1Ri/+6mdwEC0yD2abjK/+6mdwN0kpj+abjK/+6mdwN0kpj8A1Ri/+6mdwGDl0L2abhK/+6mdwN0kpj8A1Ri/+6mdwNV4OUCabhK/+6mdwGDl0L2abhK/9lN7wGDl0L2abhK/+6mdwGDl0L3azmfA+6mdwGDl0L2abhK/+6mdwNV4OUCabhK/9lN7wGDl0L2abhK/+6mdwGDl0L3azmfA+6mdwNV4OUDazmfA+6mdwHe+vz9ANWbA+6mdwAisLEDazl/A+6mdwHe+vz/azl/A+6mdwHe+vz9ANWbA+6mdwAisLEDazl/A+6mdwHe+vz9ANWbA+6mdwNV4OUDazmfA+6mdwAisLECabjK/+6mdwAisLEDazl/A+6mdwNV4OUDazmfA+6mdwGDl0L3azmfA9lN7wNV4OUDazmfA+6mdwNV4OUDazmfA+6mdwNV4OUCabhK/+6mdwNV4OUDazmfA9lN7wNV4OUDazmfA+6mdwAisLECabjK/+6mdwHe+vz8A1Ri/+6mdwHe+vz+abjK/+6mdwNV4OUCabhK/+6mdwN0kpj8A1Ri/+6mdwHe+vz8A1Ri/+6mdwAisLECabjK/+6mdwNV4OUDazmfA+6mdwNV4OUCabhK/+6mdwAisLECabjK/+6mdwNV4OUCabhK/+6mdwHe+vz8A1Ri/9lN7wGDl0L2abhK/9lN7wGDl0L3azmfA+6mdwGDl0L3azmfA+6mdwGDl0L3azmfA9lN7wGDl0L3azmfA9lN7wNV4OUDazmfA9lN7wGDl0L3azmfA9lN7wEC0yD3azl/A9lN7wN0kpj9ANWbA9lN7wEC0yD2abjK/9lN7wEC0yD3azl/A9lN7wGDl0L3azmfA9lN7wGDl0L3azmfA9lN7wN0kpj9ANWbA9lN7wHe+vz9ANWbA9lN7wEC0yD3azl/A9lN7wN0kpj/azl/A9lN7wN0kpj9ANWbA9lN7wGDl0L2abhK/9lN7wEC0yD2abjK/9lN7wGDl0L3azmfA9lN7wGDl0L2abhK/9lN7wN0kpj+abjK/9lN7wEC0yD2abjK/9lN7wGDl0L2abhK/9lN7wN0kpj8A1Ri/9lN7wN0kpj+abjK/9lN7wGDl0L2abhK/9lN7wNV4OUCabhK/9lN7wN0kpj8A1Ri/9lN7wGDl0L3azmfA9lN7wHe+vz9ANWbA9lN7wNV4OUDazmfA9lN7wNV4OUDazmfA9lN7wHe+vz9ANWbA9lN7wHe+vz/azl/A9lN7wAisLEDazl/A9lN7wNV4OUDazmfA9lN7wHe+vz/azl/A9lN7wNV4OUCabhK/9lN7wNV4OUDazmfA9lN7wAisLEDazl/A9lN7wGDl0L2abhK/+6mdwNV4OUCabhK/9lN7wNV4OUCabhK/+6mdwNV4OUCabhK/9lN7wNV4OUDazmfA9lN7wNV4OUCabhK/9lN7wAisLECabjK/9lN7wHe+vz+abjK/9lN7wHe+vz8A1Ri/9lN7wNV4OUCabhK/9lN7wHe+vz8A1Ri/9lN7wN0kpj8A1Ri/9lN7wAisLECabjK/9lN7wNV4OUCabhK/9lN7wAisLEDazl/A9lN7wAisLECabjK/9lN7wHe+vz8A1Ri/9lN7wNV4OUCabhK/AAD/f/9//z8AAP9//3//PwAA/3//f/8/AAD/f/9//z8AAP9//3//PwAA/3//f/8/AAD/f/9//z8AAP9//3//PwAA/3//f/8/AAD/f/9//z8AAP9//3//PwAA/3//f/8/AAD/f/9//z8AAP9//3//PwAA/3//f/8/AAD/f/9//z8AAP9//3//PwAA/3//f/8/AAD/f/9//z8AAP9//3//PwAA/3//f/8/AAD/f/9//z8AAP9//3//PwAA/3//f/8//38AAAAA/z//fwAAAAD/P/9/AAAAAP8//3//f/9//n//f/9//3/+f/9//3//f/5/AAD/f/9//z8AAP9//3//PwAA/3//f/8/AAD/f/9//z8AAP9//3//PwAA/3//f/8/AAD/f/9//z8AAP9//3//PwAA/3//f/8/AAD/f/9//z8AAP9//3//PwAA/3//f/8///////9//n///////3/+f///////f/5//3///wAA/z//f///AAD/P/9///8AAP8/AAD/f/9//z8AAP9//3//PwAA/3//f/8/AAD/f/9//z8AAP9//3//PwAA/3//f/8/AAD/f/9//z8AAP9//3//PwAA/3//f/8/AAD/f/9//z8AAP9//3//PwAA/3//f/8//38AAAAA/z//fwAAAAD/P/9/AAAAAP8///////9//n///////3/+f///////f/5/////f/9//z////9//3//P////3//f/8/////f/9//z////9//3//P////3//f/8/////f/9//z////9//3//P////3//f/8/////f/9//z////9//3//P////3//f/8/////f/9//z////9//3//P////3//f/8/////f/9//z////9//3//P////3//f/8/////f/9//z////9//3//P////3//f/8/////f/9//z////9//3//P////3//f/8/////f/9//z////9//3//P////3//f/8/////f/9//z////9//3//P////3//f/8/////f/9//z////9//3//P////3//f/8/////f/9//z////9//3//P////3//f/8//3//f/9//n//f/9//3/+f/9//3//f/5//3///wAA/z//f///AAD/P/9///8AAP8/////f/9//z////9//3//P////3//f/8/////f/9//z////9//3//P////3//f/8/////f/9//z////9//3//P////3//f/8/////f/9//z////9//3//P////3//f/8/")
+}, {
+"aabb": AABB(-4.9269996, 0.09800005, -3.4970002, 1, 2.6, 2.8000002),
+"attribute_data": PackedByteArray("AACAP65HdT+e2Ak/rkd1P57YCT9cj6o+rkd1PwAAAACuR3U/AACAP1yPqj4AAAAAAACAPySFKz0AAIA/UrgqP57YCT8khSs9AAAAAK5HdT8AAAAAXI+qPsVO7D6uR3U/rkd1PwAAgD9cj6o+AAAAAK5HdT8AAAAAAAAAACSFKz3FTuw+JIUrPcVO7D5SuCo/AACAP65HdT+e2Ak/XI+qPgAAgD9cj6o+XI+qPgAAAACuR3U/AACAP1yPqj4AAIA/AACAP1K4Kj+e2Ak/UrgqP57YCT8khSs9AAAAAFyPqj7FTuw+XI+qPsVO7D6uR3U/rkd1PwAAgD9cj6o+AACAP1yPqj4AAAAAAAAAACSFKz3FTuw+UrgqPwAAAABSuCo/"),
+"format": 34359738391,
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 36,
+"vertex_data": PackedByteArray("+6mdwEC0yD3azl/A+6mdwN0kpj/azl/A9lN7wN0kpj/azl/A+6mdwEC0yD2abjK/+6mdwEC0yD3azl/A9lN7wEC0yD2abjK/+6mdwEC0yD2abjK/9lN7wEC0yD2abjK/+6mdwN0kpj+abjK/+6mdwAisLEDazl/A9lN7wAisLEDazl/A+6mdwHe+vz/azl/A+6mdwAisLECabjK/9lN7wAisLEDazl/A+6mdwAisLEDazl/A+6mdwAisLECabjK/+6mdwHe+vz+abjK/9lN7wHe+vz+abjK/+6mdwEC0yD3azl/A9lN7wN0kpj/azl/A9lN7wEC0yD3azl/A9lN7wEC0yD2abjK/+6mdwEC0yD3azl/A9lN7wEC0yD3azl/A9lN7wEC0yD2abjK/9lN7wN0kpj+abjK/+6mdwN0kpj+abjK/9lN7wAisLEDazl/A9lN7wHe+vz/azl/A+6mdwHe+vz/azl/A+6mdwAisLECabjK/9lN7wAisLECabjK/9lN7wAisLEDazl/A+6mdwAisLECabjK/9lN7wHe+vz+abjK/9lN7wAisLECabjK//3//f/9/AID/f/9//38AgP9//3//fwCA/3///wAA/7//f///AAD/v/9///8AAP+///////9/AID//////38AgP//////fwCA/3//f/9/AID/f/9//38AgP9//3//fwCA/38AAAAA/7//fwAAAAD/v/9/AAAAAP+///////9/AID//////38AgP//////fwCA/3//f/9/AID/f/9//38AgP9//3//fwCA/3///wAA/7//f///AAD/v/9///8AAP+///////9/AID//////38AgP//////fwCA/3//f/9/AID/f/9//38AgP9//3//fwCA/38AAAAA/7//fwAAAAD/v/9/AAAAAP+///////9/AID//////38AgP//////fwCA")
+}, {
+"aabb": AABB(-4.9269996, 1.298, -3.5970001, 1, 0.20000005, 3),
+"attribute_data": PackedByteArray("AACAPwAAgD+LiAg9AAAAAAAAAAAAAAAAAAAAAHd3dz8AAIA/d3d3PwAAgD+LiAg9AACAPwAAgD93d3c/AAAAAIuICD0AAAAAAACAPwAAAAB3d3c/AAAAAAAAgD8AAIA/i4gIPQAAgD8AAAAAAAAAAAAAAAAAAIA/d3d3PwAAgD8AAAAAAAAAAIuICD0AAIA/AAAAAAAAAAB3d3c/AACAPwAAgD8AAIA/AAAAAHd3dz8AAIA/d3d3PwAAgD+LiAg9i4gIPQAAgD8AAAAAAAAAAAAAAAAAAIA/d3d3PwAAgD8AAAAAAAAAAIuICD0AAIA/AACAP4uICD0AAAAAi4gIPQAAAAB3d3c/AAAAAAAAAAB3d3c/AACAPwAAgD8AAIA/AACAP4uICD0AAAAAi4gIPQAAAAB3d3c/AACAPwAAgD+LiAg9AAAAAAAAAAAAAAAAd3d3PwAAAACLiAg9AAAAAAAAgD8AAIA/AACAPwAAgD8AAIA/AAAAAHd3dz8AAAAA"),
+"format": 34359738391,
+"material": SubResource("StandardMaterial3D_leg5n"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 48,
+"vertex_data": PackedByteArray("+6mdwHe+vz8A1Ri/+6mdwN0kpj/azl/A+6mdwN0kpj9ANWbA9lN7wN0kpj/azl/A+6mdwN0kpj/azl/A+6mdwN0kpj+abjK/+6mdwHe+vz8A1Ri/+6mdwN0kpj+abjK/+6mdwN0kpj/azl/A+6mdwN0kpj8A1Ri/+6mdwN0kpj+abjK/+6mdwHe+vz8A1Ri/+6mdwHe+vz/azl/A+6mdwN0kpj9ANWbA+6mdwHe+vz9ANWbA+6mdwHe+vz+abjK/+6mdwN0kpj9ANWbA+6mdwHe+vz/azl/A+6mdwN0kpj9ANWbA+6mdwHe+vz+abjK/+6mdwHe+vz8A1Ri/9lN7wHe+vz+abjK/+6mdwHe+vz+abjK/+6mdwHe+vz/azl/A9lN7wN0kpj/azl/A9lN7wHe+vz9ANWbA9lN7wN0kpj9ANWbA9lN7wN0kpj+abjK/9lN7wHe+vz9ANWbA9lN7wN0kpj/azl/A+6mdwN0kpj+abjK/9lN7wN0kpj+abjK/9lN7wN0kpj/azl/A9lN7wHe+vz9ANWbA9lN7wN0kpj+abjK/9lN7wN0kpj8A1Ri/+6mdwHe+vz/azl/A9lN7wHe+vz/azl/A9lN7wHe+vz+abjK/9lN7wN0kpj8A1Ri/9lN7wHe+vz/azl/A9lN7wHe+vz9ANWbA9lN7wHe+vz+abjK/9lN7wHe+vz/azl/A9lN7wN0kpj8A1Ri/9lN7wN0kpj8A1Ri/9lN7wHe+vz8A1Ri/9lN7wHe+vz+abjK/AAD/f/9//z8AAP9//3//PwAA/3//f/8//38AAAAA/z//fwAAAAD/P/9/AAAAAP8/AAD/f/9//z8AAP9//3//PwAA/3//f/8/AAD/f/9//z8AAP9//3//PwAA/3//f/8/AAD/f/9//z8AAP9//3//PwAA/3//f/8/AAD/f/9//z8AAP9//3//PwAA/3//f/8/AAD/f/9//z8AAP9//3//PwAA/3//f/8//3///wAA/z//f///AAD/P/9///8AAP8/////f/9//z////9//3//P////3//f/8/////f/9//z////9//3//P////3//f/8//38AAAAA/z//fwAAAAD/P/9/AAAAAP8/////f/9//z////9//3//P////3//f/8//3///wAA/z//f///AAD/P/9///8AAP8/////f/9//z////9//3//P////3//f/8/////f/9//z////9//3//P////3//f/8/////f/9//z////9//3//P////3//f/8/")
+}]
+
+[node name="bookshelf" type="Node3D" unique_id=222766458]
+
+[node name="bookshelf" type="CSGCombiner3D" parent="." unique_id=1567306921]
+visible = false
+
+[node name="CSGBox3D" type="CSGBox3D" parent="bookshelf" unique_id=1963711899]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -4.4269996, 1.398, -2.0970001)
+size = Vector3(3.05, 3, 1)
+material = SubResource("StandardMaterial3D_3d0ab")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="bookshelf/CSGBox3D" unique_id=299877062]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.233)
+operation = 2
+size = Vector3(2.8, 2.6, 1.6)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="bookshelf/CSGBox3D" unique_id=1789448971]
+size = Vector3(3, 0.2, 1)
+material = SubResource("StandardMaterial3D_leg5n")
+
+[node name="CSGBakedMeshInstance3D" type="MeshInstance3D" parent="." unique_id=527215488]
+mesh = SubResource("ArrayMesh_nera2")

@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://dru76166offm4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hli18"]
+albedo_color = Color(0.33922443, 0.25330868, 0.1667073, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_drp1i"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_as284"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qjncg"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l3qwd"]
+albedo_color = Color(0, 0, 0, 1)
+
+[node name="desk" type="CSGBox3D" unique_id=1851065761]
+size = Vector3(2.5, 0.2, 5)
+material = SubResource("StandardMaterial3D_hli18")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="." unique_id=203897923]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -1.267, 2)
+radius = 0.13
+height = 2.549
+sides = 16
+material = SubResource("StandardMaterial3D_drp1i")
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="." unique_id=2113831463]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -1.267, 2)
+radius = 0.13
+height = 2.549
+sides = 16
+material = SubResource("StandardMaterial3D_as284")
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="." unique_id=2051709719]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -1.267, -2)
+radius = 0.13
+height = 2.549
+sides = 16
+material = SubResource("StandardMaterial3D_qjncg")
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="." unique_id=2086661353]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -1.267, -2)
+radius = 0.13
+height = 2.549
+sides = 16
+material = SubResource("StandardMaterial3D_l3qwd")

@@ -1,49 +1,10 @@
 [gd_scene format=3 uid="uid://y5jxhlagh1sf"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hli18"]
-albedo_color = Color(0.33922443, 0.25330868, 0.1667073, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_drp1i"]
-albedo_color = Color(0, 0, 0, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_as284"]
-albedo_color = Color(0, 0, 0, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qjncg"]
-albedo_color = Color(0, 0, 0, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l3qwd"]
-albedo_color = Color(0, 0, 0, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i25js"]
-albedo_color = Color(0.05249884, 0.1183045, 0.12052115, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_py5gm"]
-albedo_color = Color(0.76498073, 0.774668, 0.7646027, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b7s1a"]
-albedo_color = Color(0.5138673, 0.7685009, 1.0600176, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1d0og"]
-albedo_color = Color(0.23987812, 0.3867411, 0.6934585, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_side2"]
-albedo_color = Color(0.10561416, 0.10561416, 0.10561416, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lcvim"]
-albedo_color = Color(0.105882354, 0.105882354, 0.105882354, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tk0ko"]
-albedo_color = Color(4.106, 2.621, 0.595, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3d0ab"]
-albedo_color = Color(0.39607844, 0.3254902, 0.20392157, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_leg5n"]
-albedo_color = Color(0.39607844, 0.3254902, 0.20392157, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v2aj3"]
-albedo_color = Color(5.3877144, 5.3877144, 5.3877144, 1)
+[ext_resource type="PackedScene" uid="uid://cq13pi6hpwlf" path="res://table.tscn" id="1_as284"]
+[ext_resource type="PackedScene" uid="uid://ckhj22e850nm4" path="res://bed.tscn" id="2_qjncg"]
+[ext_resource type="PackedScene" uid="uid://v6copa7ehrc0" path="res://lamp.tscn" id="3_i25js"]
+[ext_resource type="PackedScene" uid="uid://dur38y1c06871" path="res://bookshelf.tscn" id="4_py5gm"]
+[ext_resource type="PackedScene" uid="uid://bcsc5845aqwo5" path="res://window.tscn" id="5_b7s1a"]
 
 [node name="ex3" type="Node3D" unique_id=1321356327]
 
@@ -51,128 +12,12 @@ albedo_color = Color(5.3877144, 5.3877144, 5.3877144, 1)
 flip_faces = true
 size = Vector3(10, 10, 10)
 
-[node name="table" type="CSGCombiner3D" parent="." unique_id=1676009548]
+[node name="table" parent="." unique_id=1490530976 instance=ExtResource("1_as284")]
 
-[node name="desk" type="CSGBox3D" parent="table" unique_id=1621449448]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.6789997, -2.4999995, 0)
-size = Vector3(2.5, 0.2, 5)
-material = SubResource("StandardMaterial3D_hli18")
+[node name="bed" parent="." unique_id=479764788 instance=ExtResource("2_qjncg")]
 
-[node name="CSGCylinder3D" type="CSGCylinder3D" parent="table/desk" unique_id=1079668671]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -1.267, 2)
-radius = 0.13
-height = 2.549
-sides = 16
-material = SubResource("StandardMaterial3D_drp1i")
+[node name="lamp" parent="." unique_id=1403749197 instance=ExtResource("3_i25js")]
 
-[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="table/desk" unique_id=1384781244]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -1.267, 2)
-radius = 0.13
-height = 2.549
-sides = 16
-material = SubResource("StandardMaterial3D_as284")
+[node name="bookshelf" parent="." unique_id=1567306921 instance=ExtResource("4_py5gm")]
 
-[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="table/desk" unique_id=1744460015]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -1.267, -2)
-radius = 0.13
-height = 2.549
-sides = 16
-material = SubResource("StandardMaterial3D_qjncg")
-
-[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="table/desk" unique_id=1381206955]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -1.267, -2)
-radius = 0.13
-height = 2.549
-sides = 16
-material = SubResource("StandardMaterial3D_l3qwd")
-
-[node name="bed" type="CSGCombiner3D" parent="." unique_id=177214511]
-
-[node name="CSGBox3D" type="CSGBox3D" parent="bed" unique_id=458275720]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.0289996, -4.194, -1.8639998)
-size = Vector3(3.5, 1.5, 6.5)
-material = SubResource("StandardMaterial3D_i25js")
-
-[node name="CSGBox3D2" type="CSGBox3D" parent="bed/CSGBox3D" unique_id=403840111]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9319999, 0)
-size = Vector3(3.2, 0.5, 6.25)
-material = SubResource("StandardMaterial3D_py5gm")
-
-[node name="pillow" type="CSGCombiner3D" parent="bed" unique_id=672382402]
-
-[node name="CSGSphere3D" type="CSGSphere3D" parent="bed/pillow" unique_id=787648920]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7280002, -3.262, -3.961)
-lod_bias = 0.001
-radius = 0.65
-radial_segments = 24
-rings = 12
-material = SubResource("StandardMaterial3D_b7s1a")
-
-[node name="CSGSphere3D2" type="CSGSphere3D" parent="bed/pillow" unique_id=437309004]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5630007, -3.4950001, -3.961)
-lod_bias = 0.001
-radius = 1.089
-radial_segments = 24
-rings = 12
-material = SubResource("StandardMaterial3D_1d0og")
-
-[node name="lamp" type="CSGCombiner3D" parent="." unique_id=312706028]
-
-[node name="CSGCylinder3D" type="CSGCylinder3D" parent="lamp" unique_id=1260729888]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.7279987, -4.427, 3.7280002)
-radius = 1.0
-height = 1.0
-sides = 16
-cone = true
-material = SubResource("StandardMaterial3D_side2")
-
-[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="lamp/CSGCylinder3D" unique_id=1713946102]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9073486e-06, 2.3300004, 0)
-radius = 0.12
-height = 4.741
-material = SubResource("StandardMaterial3D_lcvim")
-
-[node name="CSGPolygon3D" type="CSGPolygon3D" parent="lamp/CSGCylinder3D/CSGCylinder3D2" unique_id=695045079]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8146973e-06, 1.1649997, 0)
-polygon = PackedVector2Array(0, 0, 0, 1, 0.466, 2.33, 1, 0)
-mode = 1
-spin_degrees = 360.0
-spin_sides = 8
-material = SubResource("StandardMaterial3D_tk0ko")
-
-[node name="bookshelf" type="CSGCombiner3D" parent="." unique_id=417027198]
-
-[node name="CSGBox3D" type="CSGBox3D" parent="bookshelf" unique_id=1616919693]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -4.4269996, 1.398, -2.0970001)
-size = Vector3(3.05, 3, 1)
-material = SubResource("StandardMaterial3D_3d0ab")
-
-[node name="CSGBox3D2" type="CSGBox3D" parent="bookshelf/CSGBox3D" unique_id=153138723]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.233)
-operation = 2
-size = Vector3(2.8, 2.6, 1.6)
-
-[node name="CSGBox3D" type="CSGBox3D" parent="bookshelf/CSGBox3D" unique_id=1072276126]
-size = Vector3(3, 0.2, 1)
-material = SubResource("StandardMaterial3D_leg5n")
-
-[node name="window" type="CSGCombiner3D" parent="." unique_id=919542827]
-
-[node name="CSGBox3D" type="CSGBox3D" parent="window" unique_id=551027118]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.23300052, 0, -4.8929996)
-size = Vector3(5, 4, 0.2)
-material = SubResource("StandardMaterial3D_v2aj3")
-
-[node name="CSGBox3D2" type="CSGBox3D" parent="window/CSGBox3D" unique_id=1301326170]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.3841858e-07)
-size = Vector3(5.5, 4.5, 0.5)
-
-[node name="CSGBox3D" type="CSGBox3D" parent="window/CSGBox3D/CSGBox3D2" unique_id=1928418430]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3979998, 0, 0.2329998)
-operation = 2
-size = Vector3(2.4, 3.8, 1)
-
-[node name="CSGBox3D2" type="CSGBox3D" parent="window/CSGBox3D/CSGBox3D2" unique_id=160982368]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3979998, 0, 0.2329998)
-operation = 2
-size = Vector3(2.4, 3.8, 1)
+[node name="window" parent="." unique_id=1950870359 instance=ExtResource("5_b7s1a")]
