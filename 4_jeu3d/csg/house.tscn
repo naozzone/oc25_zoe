@@ -36,7 +36,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.2229996, -4.194, 1.1649997)
 [node name="SpotLight3D" type="SpotLight3D" parent="room" unique_id=990847389]
 transform = Transform3D(1, 0, 0, 0, 0.08774683, 0.9961428, 0, -0.9961428, 0.08774683, 12.344598, 0.699, -2.7960002)
 light_color = Color(1, 0.80784315, 0, 1)
-light_energy = 4.69
+light_energy = 7.357
 spot_range = 5.592
 spot_angle = 36.216343
 
@@ -83,4 +83,4 @@ shadow_enabled = true
 [node name="SpotLight3D2" type="SpotLight3D" parent="room2" unique_id=1624624247]
 transform = Transform3D(1, 0, 0, 0, 0.08774683, 0.9961428, 0, -0.9961428, 0.08774683, 12.577598, 0, -2.7960002)
 light_color = Color(1, 0.80784315, 0, 1)
-light_energy = 4.69
+light_energy = 5.653
