@@ -1,5 +1,14 @@
 [gd_scene format=4 uid="uid://c1p7haw52ar7k"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_88gup"]
+albedo_color = Color(0.4068822, 0.47911674, 0.6187621, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bisa2"]
+albedo_color = Color(0.61149895, 0.8057881, 0.92439985, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4o3f6"]
+albedo_color = Color(0.13064983, 0.23485336, 0.36332598, 1)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v321d"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_88gup"]
@@ -28,17 +37,19 @@ _surfaces = [{
 
 [node name="CSGBox3D" type="CSGBox3D" parent="room" unique_id=1999208149]
 size = Vector3(10, 10, 10)
-material = SubResource("StandardMaterial3D_v321d")
+material = SubResource("StandardMaterial3D_88gup")
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="room/CSGBox3D" unique_id=302005]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.466, 0.466, 0.46600002)
 operation = 2
 size = Vector3(9.5, 9.5, 9.5)
+material = SubResource("StandardMaterial3D_bisa2")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="room/CSGBox3D" unique_id=336151294]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.233, 0.23300003, -4.66)
 operation = 2
 size = Vector3(6, 3, 1)
+material = SubResource("StandardMaterial3D_4o3f6")
 
 [node name="CSGBakedMeshInstance3D" type="MeshInstance3D" parent="." unique_id=2143797135]
 mesh = SubResource("ArrayMesh_88gup")
