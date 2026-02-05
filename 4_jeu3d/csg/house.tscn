@@ -45,6 +45,78 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.582, 1.8640003, -3.0289996
 light_color = Color(1, 0.7647059, 0, 1)
 shadow_enabled = true
 
+[node name="room3" parent="." unique_id=1627649487 instance=ExtResource("1_hfkix")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.495, 9.92926, -3.2619998)
+
+[node name="room2" parent="room3" unique_id=611462556 instance=ExtResource("1_hfkix")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 9.786, 0, -2.3841858e-07)
+
+[node name="lamp" parent="room3" unique_id=1210120327 instance=ExtResource("3_10qhy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.310001, 0, -6.757)
+
+[node name="bed" parent="room3" unique_id=1660726975 instance=ExtResource("2_vy7fe")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 9.087, 0, -3.029)
+
+[node name="bookshelf" parent="room3" unique_id=2096345676 instance=ExtResource("4_2y50f")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 5.825001, 0, 0.6990001)
+
+[node name="bookshelf2" parent="room3" unique_id=665129942 instance=ExtResource("4_2y50f")]
+transform = Transform3D(1, 0, -5.9604645e-08, 0, 1, 0, 5.9604645e-08, 0, 1, 0.4659996, 1.165, 2.7959998)
+
+[node name="table" parent="room3" unique_id=371483139 instance=ExtResource("5_obbqb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6989999, 0, 0.2329998)
+
+[node name="rug" parent="room3" unique_id=1399402719 instance=ExtResource("6_10qhy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.2229996, -4.194, 1.1649997)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="room3" unique_id=1639628674]
+transform = Transform3D(1, 0, 0, 0, 0.08774683, 0.9961428, 0, -0.9961428, 0.08774683, 12.344598, 0.699, -2.7960002)
+light_color = Color(1, 0.80784315, 0, 1)
+light_energy = 7.357
+spot_range = 5.592
+spot_angle = 36.216343
+
+[node name="OmniLight3D" type="OmniLight3D" parent="room3" unique_id=544826536]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.582, 1.8640003, -3.0289996)
+light_color = Color(1, 0.7647059, 0, 1)
+shadow_enabled = true
+
+[node name="room4" parent="." unique_id=1137499699 instance=ExtResource("1_hfkix")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.363093, 9.92926, -3.2619998)
+
+[node name="room2" parent="room4" unique_id=484549400 instance=ExtResource("1_hfkix")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 9.786, 0, -2.3841858e-07)
+
+[node name="lamp" parent="room4" unique_id=910993739 instance=ExtResource("3_10qhy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.310001, 0, -6.757)
+
+[node name="bed" parent="room4" unique_id=1038810961 instance=ExtResource("2_vy7fe")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 9.087, 0, -3.029)
+
+[node name="bookshelf" parent="room4" unique_id=2052890532 instance=ExtResource("4_2y50f")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 5.825001, 0, 0.6990001)
+
+[node name="bookshelf2" parent="room4" unique_id=1137936664 instance=ExtResource("4_2y50f")]
+transform = Transform3D(1, 0, -5.9604645e-08, 0, 1, 0, 5.9604645e-08, 0, 1, 0.4659996, 1.165, 2.7959998)
+
+[node name="table" parent="room4" unique_id=1689326134 instance=ExtResource("5_obbqb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6989999, 0, 0.2329998)
+
+[node name="rug" parent="room4" unique_id=1509375704 instance=ExtResource("6_10qhy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.2229996, -4.194, 1.1649997)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="room4" unique_id=590105702]
+transform = Transform3D(1, 0, 0, 0, 0.08774683, 0.9961428, 0, -0.9961428, 0.08774683, 12.344598, 0.699, -2.7960002)
+light_color = Color(1, 0.80784315, 0, 1)
+light_energy = 7.357
+spot_range = 5.592
+spot_angle = 36.216343
+
+[node name="OmniLight3D" type="OmniLight3D" parent="room4" unique_id=99410447]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.582, 1.8640003, -3.0289996)
+light_color = Color(1, 0.7647059, 0, 1)
+shadow_enabled = true
+
 [node name="room2" parent="." unique_id=267959868 instance=ExtResource("1_hfkix")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.377999, 0, -3.2619998)
 
