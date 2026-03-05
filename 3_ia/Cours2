@@ -1,0 +1,160 @@
+##cours 2
+#ia utilisé : chatgpt
+
+Voici un résumé clair du papier “Measuring Massive Multitask Language Understanding” :
+
+⸻
+
+1. Objectif du papier
+
+Les auteurs proposent un nouveau benchmark appelé MMLU (Massive Multitask Language Understanding) pour mesurer la compréhension générale des modèles de langage.
+
+L’idée :
+	•	Les benchmarks existants (GLUE, SuperGLUE, etc.) sont devenus trop faciles pour les modèles récents.
+	•	Ils testent surtout des compétences linguistiques, mais pas la connaissance générale ni la résolution de problèmes.
+
+Donc ils créent un test plus large pour évaluer la vraie compréhension du monde des modèles.
+
+⸻
+
+2. Le benchmark MMLU
+
+Le test contient :
+	•	57 sujets différents
+	•	15 908 questions
+	•	Questions à choix multiple
+
+Les domaines incluent :
+
+STEM
+	•	mathématiques
+	•	physique
+	•	informatique
+	•	ingénierie
+
+Sciences sociales
+	•	économie
+	•	psychologie
+	•	politique
+	•	sociologie
+
+Humanités
+	•	histoire
+	•	philosophie
+	•	droit
+	•	religion
+
+Autres domaines
+	•	médecine
+	•	business
+	•	faits globaux
+
+Les niveaux vont de :
+	•	élémentaire
+	•	lycée
+	•	universitaire
+	•	niveau professionnel
+
+⸻
+
+3. Méthode d’évaluation
+
+Les modèles sont testés en :
+	•	zero-shot (aucun exemple)
+	•	few-shot (quelques exemples)
+
+Cela simule comment un humain utilise ses connaissances générales, plutôt que d’être entraîné spécifiquement pour chaque test.
+
+⸻
+
+4. Résultats principaux
+
+Performance des modèles
+
+Modèle	Accuracy
+Random	25%
+GPT-3 (175B)	43.9%
+UnifiedQA	48.9%
+
+➡️ Les modèles dépassent à peine le hasard.
+
+⸻
+
+Comparaison avec humains
+	•	humains non experts : 34.5%
+	•	experts : ~90%
+
+➡️ Les modèles sont très loin du niveau expert.
+
+⸻
+
+5. Faiblesses observées des modèles
+
+1️⃣ Performance très inégale
+
+Les modèles réussissent certains sujets mais échouent sur d’autres.
+
+Exemple GPT-3 :
+	•	meilleur : ~69%
+	•	pire : proche du hasard (~25%)
+
+⸻
+
+2️⃣ Difficulté avec les calculs
+
+Les modèles sont mauvais pour :
+	•	mathématiques
+	•	physique
+	•	problèmes procéduraux
+
+Ils connaissent parfois la règle, mais ne savent pas l’appliquer.
+
+⸻
+
+3️⃣ Mauvaise compréhension morale et juridique
+
+Performance très faible sur :
+	•	droit
+	•	éthique
+	•	scénarios moraux
+
+C’est inquiétant pour des systèmes qui interagissent avec les humains.
+
+⸻
+
+4️⃣ Mauvaise calibration
+
+Le modèle est trop confiant.
+
+La différence entre :
+	•	confiance du modèle
+	•	précision réelle
+
+peut atteindre 24%.
+
+⸻
+
+6. Conclusion du papier
+
+Les auteurs montrent que :
+	•	Les modèles actuels ont beaucoup de connaissances, mais
+	•	Leur compréhension reste limitée et déséquilibrée.
+
+Principales limites :
+	•	difficulté avec calculs
+	•	compréhension morale faible
+	•	forte incertitude mal calibrée
+	•	aucun domaine maîtrisé au niveau expert
+
+Le benchmark MMLU sert donc à mesurer les vraies capacités générales des modèles.
+
+⸻
+
+✅ Idée clé du papier :
+Même les très grands modèles (comme GPT-3) ont une compréhension du monde encore très imparfaite, surtout hors des tâches linguistiques simples.
+
+⸻
+
+Si tu veux, je peux aussi te faire :
+	•	un résumé ultra-court (5 lignes)
+	•	ou un résumé technique pour ML/ICLR (ce qu’il faut retenir pour un paper review).
