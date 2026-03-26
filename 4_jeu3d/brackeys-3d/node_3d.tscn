@@ -1,0 +1,137 @@
+[gd_scene format=3 uid="uid://b3qu4o1mduh1w"]
+
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_a202f"]
+[ext_resource type="Texture2D" uid="uid://b4haqph50vcjw" path="res://assets/sky_background/autumn_field_puresky_4k.hdr" id="1_imku0"]
+[ext_resource type="PackedScene" uid="uid://c3ubw5rgw8gn5" path="res://assets/dungeon_assets/building/pillar.glb" id="2_6iypd"]
+[ext_resource type="PackedScene" uid="uid://daec0deo4lxbu" path="res://assets/dungeon_assets/building/wall_tsplit.glb" id="3_tereu"]
+[ext_resource type="PackedScene" uid="uid://cfjv06c2al740" path="res://assets/skeleton/skeleton_mage.glb" id="4_cdqbm"]
+[ext_resource type="PackedScene" uid="uid://c30y81k48l8qn" path="res://assets/zombie/zombie.glb" id="5_imku0"]
+[ext_resource type="PackedScene" uid="uid://cqomt5qa70xds" path="res://assets/import_examples/chest_gold/chest_gold.glb" id="6_wlxy5"]
+[ext_resource type="PackedScene" uid="uid://dq0cedtbphlo7" path="res://assets/import_examples/barrel/barrel.glb" id="7_3v7ru"]
+[ext_resource type="PackedScene" uid="uid://dhdjfei3j08ed" path="res://assets/dungeon_assets/props/candles.glb" id="8_tcnuu"]
+[ext_resource type="PackedScene" uid="uid://cgldc2i3nb0" path="res://assets/dungeon_assets/props/coin_stack.glb" id="9_tuemg"]
+[ext_resource type="PackedScene" uid="uid://bgmwbmlgygfyg" path="res://assets/dungeon_assets/props/table_small.glb" id="10_i0g27"]
+[ext_resource type="PackedScene" uid="uid://dc1crgsp2e2qg" path="res://chest.tscn" id="11_tereu"]
+[ext_resource type="PackedScene" uid="uid://gprxfopokks6" path="res://barrel.tscn" id="12_cdqbm"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_wlxy5"]
+panorama = ExtResource("1_imku0")
+
+[sub_resource type="Sky" id="Sky_a202f"]
+sky_material = SubResource("PanoramaSkyMaterial_wlxy5")
+
+[sub_resource type="Environment" id="Environment_noarx"]
+background_mode = 2
+sky = SubResource("Sky_a202f")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="Node3D" type="Node3D" unique_id=1072719348]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1135053950]
+environment = SubResource("Environment_noarx")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1856440174]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="floor" type="CSGBox3D" parent="." unique_id=543016344]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.018051624, 0.01581955, -0.046422005)
+use_collision = true
+size = Vector3(100, 1, 100)
+
+[node name="building" type="CSGCombiner3D" parent="floor" unique_id=1834401963]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="floor/building" unique_id=1085423411]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.487436, 4.388077, 0)
+size = Vector3(1, 8, 30)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="floor/building" unique_id=1096793563]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.512842, 4.388077, 0)
+size = Vector3(1, 8, 30)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="floor/building" unique_id=229871253]
+transform = Transform3D(0.0023911335, 0, -0.99999714, 0, 1, 0, 0.99999714, 0, 0.0023911335, 4.0693674, 4.388077, 14.469906)
+size = Vector3(1, 8, 30)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="floor/building" unique_id=1322861077]
+transform = Transform3D(0.00291473, 0, -0.99999577, 0, 1, 0, 0.99999577, 0, 0.00291473, 4.0693674, 4.388077, -14.89509)
+size = Vector3(1, 8, 30)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="floor/building" unique_id=2048530234]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8806095, 2.0337505, 19.203533)
+size = Vector3(1, 4, 10)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="floor/building" unique_id=1209948675]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.611233, 1.9923477, 19.203533)
+size = Vector3(1, 4, 10)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="floor/building" unique_id=855284266]
+transform = Transform3D(0.00664964, 0, 0.9999779, 0, 1, 0, -0.9999779, 0, 0.00664964, 3.0129657, 2.0107803, 23.742134)
+size = Vector3(1, 4, 13)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="floor/building" unique_id=1324238377]
+transform = Transform3D(0.00664964, 0, 0.9999779, 0, 1, 0, -0.9999779, 0, 0.00664964, -3.6932664, 2.0107803, -5.2264585)
+size = Vector3(1, 4, 13)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="floor/building" unique_id=170869693]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.205105, 6.5129585, 6.0114603)
+height = 12.0
+sides = 32
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="floor/building" unique_id=235559477]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3663843, 2.9605203, 14.525054)
+operation = 2
+size = Vector3(2.9550781, 4.6141357, 1.8745117)
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="floor/building" unique_id=756128035]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5978856, 2.5223947, 23.670387)
+operation = 2
+size = Vector3(2.9550781, 4.6141357, 1.8745117)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="floor/building" unique_id=221638599]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.608969, 3.0481234, -14.721868)
+operation = 2
+size = Vector3(2.9550781, 4.6141357, 1.8745117)
+
+[node name="ProtoController" parent="." unique_id=430634162 instance=ExtResource("1_a202f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9349556, 0.5109925, 33.41314)
+
+[node name="pillar2" parent="." unique_id=1958689436 instance=ExtResource("2_6iypd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.996468, 0.5158224, 24.998722)
+
+[node name="wall_tsplit" parent="." unique_id=1032436095 instance=ExtResource("3_tereu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.755343, 0.51582193, 23.128218)
+
+[node name="skeleton_mage" parent="." unique_id=1580232784 instance=ExtResource("4_cdqbm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.178486, 0.5158479, 24.690426)
+
+[node name="zombie" parent="." unique_id=848878941 instance=ExtResource("5_imku0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1998472, 0.51582193, 25.033264)
+
+[node name="chest_gold2" parent="." unique_id=292961317 instance=ExtResource("6_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.8131866, 0.5158217, 16.198677)
+
+[node name="barrel" parent="." unique_id=2054811911 instance=ExtResource("7_3v7ru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.036966, 0.51582193, 24.62165)
+
+[node name="candles" parent="." unique_id=50992424 instance=ExtResource("8_tcnuu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.737282, 1.3086286, 26.163498)
+
+[node name="coin_stack" parent="." unique_id=791202474 instance=ExtResource("9_tuemg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.787773, 0.51582193, 26.388876)
+
+[node name="table_small2" parent="." unique_id=1249272141 instance=ExtResource("10_i0g27")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.831654, 0.51582193, 26.203293)
+
+[node name="StaticBody3D" parent="." unique_id=1693128999 instance=ExtResource("11_tereu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.51544714, 25.533573)
+
+[node name="RigidBody3D" parent="." unique_id=1058927434 instance=ExtResource("12_cdqbm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.986284, 2.3269663, 25.677328)
+
+[node name="RigidBody3D2" parent="." unique_id=368184675 instance=ExtResource("12_cdqbm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4254637, 0.51589715, 40.280846)
+
+[node name="RigidBody3D3" parent="." unique_id=1792054060 instance=ExtResource("12_cdqbm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.300098, 0.51589525, 38.448013)
